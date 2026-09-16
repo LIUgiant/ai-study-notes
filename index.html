@@ -16,10 +16,12 @@
 .header-start{display:flex;align-items:center;gap:16px;min-width:0}.header-start>a{white-space:nowrap}.book-header .mobile-menu{display:block;flex-shrink:0;width:38px;height:38px;padding:0;border:0;background:transparent;color:#526078;font-size:23px;line-height:1;cursor:pointer}.book-header .mobile-menu:hover{background:#edf0f8}.task-group{border:0;padding:0;margin:24px 0 12px;border-radius:0}.task-group summary{display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;font-size:15px;padding:10px 12px;color:var(--ink);line-height:1.6;border-radius:5px}.task-group summary::-webkit-details-marker{display:none}.task-group summary::after{content:'›';font-size:22px;line-height:1;transform:rotate(0deg)}.task-group[open]>summary::after{transform:rotate(90deg)}.task-group summary:hover{background:#edf0f8}.task-group:has([aria-current="page"])>summary{color:#4058bf}.task-children{border-left:1px solid #dbe1ee;margin:5px 0 8px 18px;padding-left:6px}.task-children a,.nav .task-children a.sub{padding:8px 10px;font-size:14px}.mobile-menu:focus-visible,.task-group summary:focus-visible{outline:2px solid #4058bf;outline-offset:3px}
 @media(min-width:761px){body.sidebar-collapsed .rail{display:none}body.sidebar-collapsed .wrap{margin-left:0;max-width:1100px}}
 @media(max-width:760px){.header-start{gap:9px}.book-header .mobile-menu{font-size:22px;padding:0}.header-start strong{font-size:15px}.book-header{padding:0 12px}.rail{width:min(300px,90vw)}.task-group{margin-top:18px}}
+
+.code-diagram{margin:26px 0;overflow-x:auto;border:1px solid #dce3f0;border-radius:8px;padding:14px;background:#fbfcff}.code-diagram svg{display:block;width:100%;min-width:590px;height:auto}.code-diagram figcaption{font-size:13px;color:#657188;text-align:center;padding-top:10px}.lesson-code{tab-size:4;font-size:14px;line-height:1.85;max-height:650px;overflow:auto}.lesson-code code{background:none;padding:0;white-space:pre;overflow-wrap:normal}details>summary{line-height:1.7}.prose ol li{margin-bottom:14px}
 </style></head><body><a class="skip" href="#content">跳到学习内容</a>
-<header class="book-header"><div class="header-start"><button class="mobile-menu" aria-expanded="true" aria-controls="book-nav" aria-label="收起侧栏" title="收起侧栏">☰</button><a href="#home"><strong><span class="book-mark">笔记</span>Easy Data × AI</strong></a></div><a href="https://github.com/LIUgiant/ai-study-notes" target="_blank" rel="noopener">GitHub ↗</a></header><aside class="rail" id="book-nav"><div class="brand">EASY DATA <span>× AI</span></div><p class="rail-sub">学习、实践与问题记录</p><nav class="nav" aria-label="任务目录"><a href="#home" data-page="home">学习笔记总览</a><details class="task-group" data-group="task1" open><summary>Task 1 · 环境与基础</summary><div class="task-children"><a href="#task1" data-page="task1">打卡笔记</a><a class="sub" href="#f0" data-page="f0"><b>F0</b>经验从哪里来</a><a class="sub" href="#f1" data-page="f1"><b>F1</b>模型的边界</a><a class="sub" href="#f2" data-page="f2"><b>F2</b>Agent 能力地图</a><a class="sub" href="#journal" data-page="journal">练习与私人草稿</a></div></details><details class="task-group" data-group="task2"><summary>Task 2 · RAG 预习</summary><div class="task-children"><a href="#task2" data-page="task2">知识与实验笔记</a></div></details><div class="nav-label">后续学习</div><a href="#template" data-page="template">Task 笔记模板</a><p class="future-note">后续 Task 完成后，逐章加入这里。</p></nav><div class="rail-bottom"><strong id="progress-text">0 / 3 章</strong>由你确认自己的阅读进度<div class="meter"><span id="progress-bar"></span></div><span id="quiz-progress">自测尚未开始</span></div></aside>
+<header class="book-header"><div class="header-start"><button class="mobile-menu" aria-expanded="true" aria-controls="book-nav" aria-label="收起侧栏" title="收起侧栏">☰</button><a href="#home"><strong><span class="book-mark">笔记</span>Easy Data × AI</strong></a></div><a href="https://github.com/LIUgiant/ai-study-notes" target="_blank" rel="noopener">GitHub ↗</a></header><aside class="rail" id="book-nav"><div class="brand">EASY DATA <span>× AI</span></div><p class="rail-sub">学习、实践与问题记录</p><nav class="nav" aria-label="任务目录"><a href="#home" data-page="home">学习笔记总览</a><details class="task-group" data-group="task1" open><summary>Task 1 · 环境与基础</summary><div class="task-children"><a href="#task1" data-page="task1">打卡笔记</a><a class="sub" href="#f0" data-page="f0"><b>F0</b>经验从哪里来</a><a class="sub" href="#f1" data-page="f1"><b>F1</b>模型的边界</a><a class="sub" href="#f2" data-page="f2"><b>F2</b>Agent 能力地图</a><a class="sub" href="#journal" data-page="journal">练习与私人草稿</a></div></details><details class="task-group" data-group="task2"><summary>Task 2 · D1 代码实战</summary><div class="task-children"><a href="#task2" data-page="task2">实验总览与运行方式</a><a href="#d1-1" data-page="d1-1">D1-1 · 单次调用</a><a href="#d1-2" data-page="d1-2">D1-2 · 多轮消息</a><a href="#d1-3" data-page="d1-3">D1-3 · 流式输出</a><a href="#d1-4" data-page="d1-4">D1-4 · 模拟工具</a><a href="#d1-5" data-page="d1-5">D1-5 · seekdb 工具</a><a href="#d1-6" data-page="d1-6">D1-6 · 框架 Agent</a></div></details><details class="task-group" data-group="extra"><summary>拓展阅读</summary><div class="task-children"><a href="#rag" data-page="rag">D3 · RAG 实验笔记</a></div></details><div class="nav-label">后续学习</div><a href="#template" data-page="template">Task 笔记模板</a><p class="future-note">后续 Task 完成后，逐章加入这里。</p></nav><div class="rail-bottom"><strong id="progress-text">0 / 3 章</strong>由你确认自己的阅读进度<div class="meter"><span id="progress-bar"></span></div><span id="quiz-progress">自测尚未开始</span></div></aside>
 <div class="wrap"><header><div class="topline"><span class="tag">学习笔记 / <span id="breadcrumb">总览</span></span><span id="save-state" role="status">心得仅保存在当前浏览器</span></div><div class="intro"><h1>从数据，读懂 AI</h1><p>先读一个概念，再想一个例子，最后用自己的话讲出来。</p></div></header><main id="content" tabindex="-1">
-<section class="panel" id="home" aria-labelledby="home-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">LEARNING NOTES</span><h2 id="home-title">Easy Data × AI 学习笔记</h2><p>从环境准备开始，记录每一次实践、概念理解和待解的问题。</p></div></div><div class="body prose"><div class="chapter-meta">Datawhale 组队学习 · 持续更新</div><h3>任务目录</h3><a class="task-row" href="#task1"><div><strong>01 &nbsp; 环境准备与公共基础</strong><p>Shell / Python / 模型 API / Git<br>F0 经验积累 · F1 模型边界 · F2 Agent 能力</p></div><em>阅读笔记 →</em></a><a class="task-row" href="#task2"><div><strong>02 &nbsp; RAG 专题预习与实验</strong><p>六段链路 · 检索对比 · 百炼与 seekdb · Agent 工具循环</p></div><em>阅读实验笔记 →</em></a><p class="note">已整理 Task 1，并新增 RAG 专题预习与课程实验。Task 2 的正式安排仍待核对。</p><h3>笔记怎么读</h3><p>每个 Task 先用一篇打卡笔记串起学习目标、核心概念、实践记录和后续问题。需要展开时，再进入对应的知识点导读。</p><p>Task 1 的 F0 / F1 / F2 保留了例子和自测。练习答案、阅读进度和私人草稿只保存在当前浏览器；公开打卡笔记则可以直接分享给别人。</p><div class="page-links"><a href="#task1">开始阅读 Task 1 →</a><a href="#template">查看后续笔记模板</a></div></div></article></section>
+<section class="panel" id="home" aria-labelledby="home-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">LEARNING NOTES</span><h2 id="home-title">Easy Data × AI 学习笔记</h2><p>从环境准备开始，记录每一次实践、概念理解和待解的问题。</p></div></div><div class="body prose"><div class="chapter-meta">Datawhale 组队学习 · 持续更新</div><h3>任务目录</h3><a class="task-row" href="#task1"><div><strong>01 &nbsp; 环境准备与公共基础</strong><p>Shell / Python / 模型 API / Git<br>F0 经验积累 · F1 模型边界 · F2 Agent 能力</p></div><em>阅读笔记 →</em></a><a class="task-row" href="#task2"><div><strong>02 &nbsp; 模型 API 与 Agent 代码实战</strong><p>D1-1 至 D1-6 · 逐段代码讲解 · SVG 流程图 · 真实运行输出</p></div><em>阅读实验笔记 →</em></a><p class="note">已整理 Task 1 与 Task 2（D1-1 至 D1-6）。先前 RAG 实验保留为拓展阅读。</p><h3>笔记怎么读</h3><p>每个 Task 先用一篇打卡笔记串起学习目标、核心概念、实践记录和后续问题。需要展开时，再进入对应的知识点导读。</p><p>Task 1 的 F0 / F1 / F2 保留了例子和自测。练习答案、阅读进度和私人草稿只保存在当前浏览器；公开打卡笔记则可以直接分享给别人。</p><div class="page-links"><a href="#task1">开始阅读 Task 1 →</a><a href="#template">查看后续笔记模板</a></div></div></article></section>
 <section class="panel" id="task1" aria-labelledby="task1-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 01 / 学习记录</span><h2 id="task1-title">环境准备与公共基础</h2><p>从“需要哪些 API”到“离线评测在测什么”，把课前准备中的问题逐个讲清楚。</p></div></div><div class="body prose"><div class="chapter-meta">实践日期：2026-09-15 · 公共基础：F0 / F1 / F2</div><div class="callout"><strong>本次任务的主线</strong><p>完成 Shell、Python、模型 API、Git 自检，阅读公共基础。下文按实际提问整理，实践结果来自本机记录，操作由 AI 辅助完成；概念解释不作为个人掌握程度的证明。</p></div>
 <h3>01 · Task 1 要完成什么，需要做实验吗？</h3><p>本次给出的任务要求是“完成 Shell、Python、模型 API、Git 自检与课前导读”。因此，重点是准备好可运行的环境，并建立公共基础概念之间的联系。</p><p>环境自检本身就有动手操作：运行命令、安装依赖、尝试最小 API 请求、检查错误。本次还提前体验了 D3/P5 离线评测，但它们属于补充探索，不据此把它们列为 Task 1 的必交实验。</p><div class="table-wrap"><table><thead><tr><th>任务部分</th><th>这次留下的证据</th></tr></thead><tbody><tr><td>环境准备</td><td>版本检查、依赖检查和测试运行结果</td></tr><tr><td>模型接口</td><td>Qwen、DeepSeek 各一次真实请求的结果</td></tr><tr><td>公共基础</td><td>F0/F1/F2 知识整理、案例和待解问题</td></tr><tr><td>补充探索</td><td>D3/P5 离线报告及 seekdb 排错记录</td></tr></tbody></table></div>
 <h3>02 · 已有 Qwen 和 DeepSeek，API 怎么用？</h3><p>本次使用的是阿里云百炼的 Qwen API，以及 DeepSeek 官网 API。调用时不只有 Key：还要匹配对应服务商的接口地址和模型名。密钥保存在本机 <code>code/.env</code>，不写入公开笔记。</p><p>操作分为三步：先准备配置位置，再填入两家的 Key，最后运行独立的在线检查脚本。课程原版配置没有直接接入本次 DeepSeek 变量，因此由单独的检查脚本完成适配。</p><pre><code># 在课程仓库根目录运行；这条命令会发起真实模型请求
@@ -62,7 +64,7 @@ git --version
 ## 参考资料
 课程章节、官方文档和相关链接。</code></pre><h3>随着任务逐章更新</h3><p>新 Task 使用独立章节，公开笔记写入网页后，所有读者都能看到。章节多起来时，仍然通过左侧任务目录进入，右侧目录定位到本篇的具体小节。</p><p>目前不预填未来任务的标题、安排或完成状态；按实际课程任务逐次补充。</p><div class="page-links"><a href="#task1">查看 Task 1 的写法 →</a></div></div></article></section>
 
-<section class="panel" id="task2" aria-labelledby="task2-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / RAG 专题预习</span><h2 id="task2-title">RAG：找得到，也要答得有依据</h2><p>从六段链路到真实检索与生成，记录课程实验中的结果与问题。</p></div></div><div class="body prose"><div class="chapter-meta">实验日期：2026-09-16 · P2 知识整理 / D3 实践</div><div class="callout"><strong>本篇范围</strong><p>按 RAG 方向提前学习，正式 Task 2 的章节安排尚未核对。本文记录已运行的课程实验，不代表已完成官方全部要求。知识库来自课程合成产品资料，不是实际产品文档或业务建议。</p></div>
+<section class="panel" id="rag" aria-labelledby="rag-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">拓展阅读 / D3 RAG 实验</span><h2 id="rag-title">RAG：找得到，也要答得有依据</h2><p>从六段链路到真实检索与生成，记录课程实验中的结果与问题。</p></div></div><div class="body prose"><div class="chapter-meta">实验日期：2026-09-16 · P2 知识整理 / D3 实践</div><div class="callout"><strong>本篇范围</strong><p>这是先前按 RAG 方向运行的 D3 拓展实验。已确认本次 Task 2 应完成 D1-1 至 D1-6，请从左侧 Task 2 进入对应代码讲解。本文保留供后续学习。知识库来自课程合成产品资料，不是实际产品文档或业务建议。</p></div>
 <h3>01 · RAG 不等于向量搜索</h3><p>RAG 的核心是生成前获取外部证据。向量检索适合意思相近但措辞不同的问题；全文检索适合错误码、函数名等精确标识；元数据过滤用于限定版本、类别和访问范围；实时状态则可能需要数据库或 API 查询。</p><p>例如，“E-4012”和“E-4013”可能很相似，但错误原因不同。只看相似度不够；同理，版本号“4.2.1”不能被相近版本替代。检索方案应根据任务选择，而不是默认所有问题只走向量搜索。</p>
 <h3>02 · 六段链路：错误可能发生在哪里？</h3><div class="table-wrap"><table><thead><tr><th>环节</th><th>要解决的问题</th><th>检查证据</th></tr></thead><tbody><tr><td>数据准备</td><td>解析、清洗、分块、补来源和版本，建立索引</td><td>正确内容是否存在？分块是否丢失条件？</td></tr><tr><td>问题理解与改写</td><td>保留实体，补必要上下文，选择检索路径</td><td>改写是否丢掉错误码、时间或版本？</td></tr><tr><td>搜索召回</td><td>向量、全文、过滤等取回候选资料</td><td>目标文档是否出现在候选集合？</td></tr><tr><td>融合与重排</td><td>多路合并、去重、重排，减少噪音</td><td>正确资料是否被挤出最终上下文？</td></tr><tr><td>组织与生成</td><td>提供证据、约束回答、核对引用</td><td>每条结论是否受到证据支持？</td></tr><tr><td>评估与反馈</td><td>固定样本，分别检查各环节和最终回答</td><td>修改前后是否使用同一组判断标准？</td></tr></tbody></table></div><p>优化时先定位环节。知识库没有答案，需要补数据；已经召回但答偏了，继续提高召回率未必解决问题。</p>
 <h3>03 · 分块、Embedding 与混合检索</h3><p><strong>分块：</strong>把文档变成可检索单元。块太小可能拆掉前提和结论，太大则带入噪音。标题、来源、版本等元数据应随块保留。本次 D3 已提供 19 个预处理片段，因此没有重新实验 PDF 解析或不同分块策略。</p><p><strong>Embedding：</strong>将文本转换为向量，用相似度寻找相关内容。文档和查询需要使用相匹配的向量模型与维度；更换模型后不能默认旧向量仍可混用。本次使用百炼 <code>text-embedding-v4</code>，维度为 1024。</p><p><strong>混合检索：</strong>把语义匹配与精确词项检索结合。D3 使用 RRF 按各路排名融合结果；元数据过滤则直接限定适用范围，作用不同于“增加一个排序分数”。版本等硬条件应显式处理。</p>
@@ -75,8 +77,1371 @@ git --version
 .venv/bin/python learning/task2/course_lab.py
 
 # 加上真实百炼 Embedding、seekdb 对比与 Agent 调用
-.venv/bin/python learning/task2/course_lab.py --run-online</code></pre><p>真实调用需要本地配置百炼 Key。脚本和报告保存在本地学习目录；公开网页不含密钥或数据库。后续可以扩展错误码、版本、多证据和无答案样例，先建立可靠的判分标准，再比较检索和生成策略。</p><p>P2 的真实反馈归因作业暂未开展；正式任务安排确认后，再核对剩余要求。本页先记录已经完成的课程知识整理与实验。</p><p class="source">依据：<a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/docs/pm/P2%20%E8%AF%BE%E7%A8%BF%EF%BC%9AAgentic%20RAG%20%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.md">课程 P2</a> · <a href="https://github.com/datawhalechina/easy-data-x-ai/tree/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D3">课程 D3 代码与样例</a> · <a href="https://help.aliyun.com/en/model-studio/embedding-interfaces-compatible-with-openai">百炼向量接口</a></p><div class="page-links"><a href="#task1">← Task 1</a><a href="#home">笔记总览</a></div></div></article></section>
-<section id="f0" class="panel" aria-labelledby="f0-title"><article class="chapter"><header class="chapter-head"><div><span class="eyebrow">F0 · 课前闲聊</span><h2 id="f0-title">Agent 的经验，从哪里来？</h2><p>先弄清经验怎样留下来，再追踪它怎样影响下一次任务。</p></div><span class="chapter-no" aria-hidden="true">01</span></header><div class="body">
+.venv/bin/python learning/task2/course_lab.py --run-online</code></pre><p>真实调用需要本地配置百炼 Key。脚本和报告保存在本地学习目录；公开网页不含密钥或数据库。后续可以扩展错误码、版本、多证据和无答案样例，先建立可靠的判分标准，再比较检索和生成策略。</p><p>P2 的真实反馈归因作业暂未开展。本篇作为后续 RAG 学习的实验记录，不计为本次 D1 任务。</p><p class="source">依据：<a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/docs/pm/P2%20%E8%AF%BE%E7%A8%BF%EF%BC%9AAgentic%20RAG%20%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1.md">课程 P2</a> · <a href="https://github.com/datawhalechina/easy-data-x-ai/tree/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D3">课程 D3 代码与样例</a> · <a href="https://help.aliyun.com/en/model-studio/embedding-interfaces-compatible-with-openai">百炼向量接口</a></p><div class="page-links"><a href="#task1">← Task 1</a><a href="#home">笔记总览</a></div></div></article></section>
+
+<section class="panel" id="task2" aria-labelledby="task2-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-1 → D1-6</span><h2 id="task2-title">从一次模型调用，到一个 Agent</h2><p>跟着六个可运行实验，读懂消息、流式响应、工具调用与执行循环。</p></div></div><div class="body prose"><div class="chapter-meta">实际执行：2026-09-17 · 百炼 qwen-plus · 原版 D1 入口</div><div class="callout"><strong>这次的正确任务范围</strong><p>跑通 easy-data-x-ai 的 code/D1 中 d1_1 到 d1_6。之前的 RAG 实验来自 D3，保留在<a href="#rag">拓展阅读：RAG 实验</a>，不替代本次 D1 任务。</p></div>
+<h3>01 · 六个实验如何一步步增加能力？</h3><p>先学会发送一条请求，再显式携带对话历史，再消费流式响应。随后给模型提供工具说明，让程序执行模型提出的调用；把模拟工具换成真实数据库，最后把手写循环交给 Agent 框架管理。</p><div class="table-wrap"><table><thead><tr><th>实验</th><th>新增概念</th><th>最重要的代码入口</th></tr></thead><tbody><tr><td><a href="#d1-1">D1-1 · 单次调用</a></td><td>消息与响应对象</td><td><code>llm.invoke</code></td></tr><tr><td><a href="#d1-2">D1-2 · 多轮消息</a></td><td>历史由调用方提供</td><td><code>MESSAGES</code></td></tr><tr><td><a href="#d1-3">D1-3 · 流式输出</a></td><td>迭代消息块</td><td><code>llm.stream</code></td></tr><tr><td><a href="#d1-4">D1-4 · 模拟工具</a></td><td>声明 → 决策 → 执行 → 回传</td><td><code>bind_tools / run_tool_call_loop</code></td></tr><tr><td><a href="#d1-5">D1-5 · seekdb 工具</a></td><td>真实入库与向量查询</td><td><code>collection.add / query</code></td></tr><tr><td><a href="#d1-6">D1-6 · 框架 Agent</a></td><td>模型与工具节点循环</td><td><code>create_agent / agent.stream</code></td></tr></tbody></table></div><p>每节按“问题 → 执行图 → 核心代码 → 变量与状态 → 实际输出 → 改一处再验证”展开。完整原版源码放在折叠区，便于对照而不打断阅读。</p>
+<h3>02 · 一次工具调用，真正跨过了哪几步？</h3><p>模型不会因为生成了函数名就自动执行代码。它输出结构化请求；应用检查请求，调用白名单中的函数，把返回值送回模型，模型才继续回答。</p><pre><code>messages = [用户问题]
+while True:
+    response = 请求模型(messages, 工具定义)
+    if response 没有工具调用:
+        return 最终回答
+    校验工具名、参数和调用标识
+    result = 本地执行工具(...)
+    messages 追加模型工具请求与工具结果</code></pre><p>上面是标准协议的概念伪代码，不可直接执行。D1-4/5 当前使用兼容回传分支，差别会在 D1-4 详细说明；D1-6 则由框架组织工具消息。</p><details><summary>深入阅读：公共工具循环完整源码</summary><pre class="lesson-code"><code>import json
+
+from langchain_core.messages import (
+    AIMessage,
+    ToolMessage,
+    message_chunk_to_message,
+)
+from langchain_core.tools import BaseTool
+
+
+_REQUIRED_RESPONSE_FIELDS = (&quot;content&quot;, &quot;tool_calls&quot;, &quot;invalid_tool_calls&quot;)
+
+
+def _require_response_fields(response):
+    &quot;&quot;&quot;检查每个流式消息块是否具备工具循环所需的标准字段。&quot;&quot;&quot;
+    if response is None:
+        raise RuntimeError(&quot;模型返回了空响应&quot;)
+    missing = [
+        field
+        for field in _REQUIRED_RESPONSE_FIELDS
+        if not hasattr(response, field)
+    ]
+    if missing:
+        raise RuntimeError(
+            f&quot;模型响应缺少必要字段：{&#x27;, &#x27;.join(missing)}&quot;
+        )
+    return response
+
+
+def aggregate_stream(chunks):
+    &quot;&quot;&quot;增量聚合真实 LangChain 消息块，并拒绝结构无效的流。&quot;&quot;&quot;
+    iterator = iter(chunks)
+    try:
+        response = _require_response_fields(next(iterator))
+    except StopIteration:
+        raise RuntimeError(&quot;模型未返回任何响应&quot;) from None
+
+    for chunk in iterator:
+        valid_chunk = _require_response_fields(chunk)
+        try:
+            response = response + valid_chunk
+        except Exception as exc:
+            raise RuntimeError(f&quot;模型流式响应聚合失败：{exc}&quot;) from exc
+        _require_response_fields(response)
+    return response
+
+
+def _has_nonempty_content(content):
+    if isinstance(content, str):
+        return bool(content.strip())
+    if isinstance(content, list):
+        return any(
+            bool(item.strip()) if isinstance(item, str) else bool(item)
+            for item in content
+        )
+    return False
+
+
+def _validate_tool_calls(
+    response,
+    tools_by_name,
+    *,
+    require_tool_call_ids,
+):
+    &quot;&quot;&quot;使用聚合后的原始 JSON 参数整批校验工具调用。&quot;&quot;&quot;
+    invalid_tool_calls = response.invalid_tool_calls
+    if invalid_tool_calls:
+        raise RuntimeError(
+            f&quot;模型返回了无效工具调用 invalid_tool_calls：{invalid_tool_calls}&quot;
+        )
+
+    tool_calls = response.tool_calls
+    if not isinstance(tool_calls, list):
+        raise RuntimeError(&quot;模型响应的 tool_calls 必须为列表&quot;)
+    if not tool_calls:
+        return []
+
+    raw_chunks = getattr(response, &quot;tool_call_chunks&quot;, None)
+    if not isinstance(raw_chunks, list) or len(raw_chunks) != len(tool_calls):
+        raise RuntimeError(&quot;模型响应缺少完整的 tool_call_chunks 原始参数&quot;)
+
+    validated_calls = []
+    seen_ids = set()
+    for index, (tool_call, raw_chunk) in enumerate(
+        zip(tool_calls, raw_chunks),
+        start=1,
+    ):
+        if not isinstance(tool_call, dict) or not isinstance(raw_chunk, dict):
+            raise RuntimeError(f&quot;第 {index} 个工具调用结构无效：必须为字典&quot;)
+
+        tool_name = tool_call.get(&quot;name&quot;)
+        if not isinstance(tool_name, str) or not tool_name:
+            raise RuntimeError(f&quot;第 {index} 个工具调用的 name 必须为非空字符串&quot;)
+        raw_name = raw_chunk.get(&quot;name&quot;)
+        if raw_name not in (None, tool_name):
+            raise RuntimeError(f&quot;第 {index} 个工具调用名称与原始分片不一致&quot;)
+        if tool_name not in tools_by_name:
+            raise RuntimeError(f&quot;模型请求了未注册的工具：{tool_name}&quot;)
+
+        raw_args = raw_chunk.get(&quot;args&quot;)
+        if not isinstance(raw_args, str):
+            raise RuntimeError(f&quot;工具 {tool_name} 的原始 args 必须是 JSON 字符串&quot;)
+        try:
+            tool_args = json.loads(raw_args)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(
+                f&quot;工具 {tool_name} 的原始 args 不是完整合法 JSON&quot;
+            ) from exc
+        if not isinstance(tool_args, dict):
+            raise RuntimeError(f&quot;工具 {tool_name} 的 args 必须为 JSON 对象&quot;)
+
+        tool_call_id = tool_call.get(&quot;id&quot;)
+        raw_id = raw_chunk.get(&quot;id&quot;)
+        if raw_id not in (None, tool_call_id):
+            raise RuntimeError(f&quot;第 {index} 个工具调用 ID 与原始分片不一致&quot;)
+        if require_tool_call_ids:
+            if not isinstance(tool_call_id, str) or not tool_call_id.strip():
+                raise RuntimeError(
+                    f&quot;标准 LangChain 协议要求第 {index} 个工具调用具有非空 ID&quot;
+                )
+            if tool_call_id in seen_ids:
+                raise RuntimeError(
+                    f&quot;标准 LangChain 协议要求工具调用 ID 唯一：{tool_call_id}&quot;
+                )
+            seen_ids.add(tool_call_id)
+
+        validated_call = dict(tool_call)
+        validated_call[&quot;args&quot;] = tool_args
+        validated_call[&quot;type&quot;] = &quot;tool_call&quot;
+        validated_calls.append(
+            (validated_call, tools_by_name[tool_name])
+        )
+    return validated_calls
+
+
+def _format_tool_result_message(tool_call, result):
+    lines = [
+        f&quot;工具名称：{tool_call[&#x27;name&#x27;]}&quot;,
+        f&quot;调用参数：{tool_call[&#x27;args&#x27;]!r}&quot;,
+    ]
+    if tool_call.get(&quot;id&quot;) is not None:
+        lines.append(f&quot;调用 ID：{tool_call[&#x27;id&#x27;]}&quot;)
+    lines.append(f&quot;执行结果：\n\n{result}&quot;)
+    return &quot;\n&quot;.join(lines)
+
+
+def _tool_message_content(result):
+    &quot;&quot;&quot;把常见工具返回值转换成 ToolMessage 可接受的内容。&quot;&quot;&quot;
+    if isinstance(result, (str, list)):
+        return result
+    return json.dumps(result, ensure_ascii=False, default=str)
+
+
+def _standard_assistant_message(response):
+    try:
+        assistant_message = message_chunk_to_message(response)
+    except Exception as exc:
+        raise RuntimeError(f&quot;无法把聚合响应转换为 assistant 消息：{exc}&quot;) from exc
+    if not isinstance(assistant_message, AIMessage):
+        raise RuntimeError(&quot;聚合响应无法转换为标准 AIMessage&quot;)
+    return assistant_message
+
+
+def _standard_tool_message(tool_call, result):
+    if isinstance(result, ToolMessage):
+        if result.tool_call_id != tool_call[&quot;id&quot;]:
+            raise RuntimeError(
+                f&quot;工具 {tool_call[&#x27;name&#x27;]} 返回的 ToolMessage ID 不匹配&quot;
+            )
+        return result
+    return ToolMessage(
+        content=_tool_message_content(result),
+        tool_call_id=tool_call[&quot;id&quot;],
+    )
+
+
+def _standard_error_message(tool_call, detail):
+    return ToolMessage(
+        content=detail,
+        tool_call_id=tool_call[&quot;id&quot;],
+        status=&quot;error&quot;,
+    )
+
+
+def _append_skipped_tool_messages(messages, remaining_calls, reason):
+    for tool_call, _tool in remaining_calls:
+        messages.append(
+            _standard_error_message(
+                tool_call,
+                f&quot;未执行工具 {tool_call[&#x27;name&#x27;]}：{reason}&quot;,
+            )
+        )
+
+
+def _callback_result(result):
+    if isinstance(result, ToolMessage):
+        return result.content
+    return result
+
+
+def _tool_input(tool, tool_call, *, legacy_user_message_fallback):
+    if not legacy_user_message_fallback and isinstance(tool, BaseTool):
+        return tool_call
+    return tool_call[&quot;args&quot;]
+
+
+def run_tool_call_loop(
+    model,
+    messages,
+    tools_by_name,
+    max_rounds=5,
+    on_tool_result=None,
+    *,
+    legacy_user_message_fallback=False,
+):
+    &quot;&quot;&quot;执行多轮工具调用；默认使用标准 LangChain assistant/tool 协议。
+
+    max_rounds 表示最多执行多少轮工具。执行完最后一轮后，模型仍会获得一次
+    生成最终答案的机会；只有这次仍请求工具时才报告达到上限。
+    &quot;&quot;&quot;
+    if (
+        isinstance(max_rounds, bool)
+        or not isinstance(max_rounds, int)
+        or max_rounds &lt;= 0
+    ):
+        raise ValueError(&quot;max_rounds 必须是正整数&quot;)
+
+    executed_tool_rounds = 0
+    while True:
+        response = aggregate_stream(model.stream(messages))
+        validated_calls = _validate_tool_calls(
+            response,
+            tools_by_name,
+            require_tool_call_ids=not legacy_user_message_fallback,
+        )
+        if not validated_calls:
+            if not _has_nonempty_content(response.content):
+                raise RuntimeError(&quot;模型未返回工具调用，且最终回答为空&quot;)
+            return response
+
+        if executed_tool_rounds &gt;= max_rounds:
+            raise RuntimeError(
+                f&quot;工具调用已达到 {max_rounds} 轮上限，&quot;
+                &quot;最终生成机会仍请求了工具&quot;
+            )
+
+        if not legacy_user_message_fallback:
+            messages.append(_standard_assistant_message(response))
+
+        for index, (tool_call, tool) in enumerate(validated_calls, start=1):
+            tool_input = _tool_input(
+                tool,
+                tool_call,
+                legacy_user_message_fallback=legacy_user_message_fallback,
+            )
+            try:
+                result = tool.invoke(tool_input)
+            except Exception as exc:
+                error_detail = f&quot;工具 {tool_call[&#x27;name&#x27;]} 执行失败&quot;
+                if legacy_user_message_fallback:
+                    messages.append(
+                        (
+                            &quot;user&quot;,
+                            _format_tool_result_message(
+                                tool_call,
+                                error_detail,
+                            ),
+                        )
+                    )
+                else:
+                    messages.append(
+                        _standard_error_message(tool_call, error_detail)
+                    )
+                    _append_skipped_tool_messages(
+                        messages,
+                        validated_calls[index:],
+                        &quot;同一批次中的前序工具执行失败&quot;,
+                    )
+                raise RuntimeError(
+                    f&quot;第 {index} 个工具 {tool_call[&#x27;name&#x27;]} 执行失败：{exc}&quot;
+                ) from exc
+
+            if legacy_user_message_fallback:
+                messages.append(
+                    (
+                        &quot;user&quot;,
+                        _format_tool_result_message(tool_call, result),
+                    )
+                )
+            else:
+                try:
+                    messages.append(
+                        _standard_tool_message(tool_call, result)
+                    )
+                except Exception as exc:
+                    error_detail = f&quot;工具 {tool_call[&#x27;name&#x27;]} 的结果消息无效&quot;
+                    messages.append(
+                        _standard_error_message(tool_call, error_detail)
+                    )
+                    _append_skipped_tool_messages(
+                        messages,
+                        validated_calls[index:],
+                        &quot;同一批次中的前序工具结果消息无效&quot;,
+                    )
+                    raise RuntimeError(
+                        f&quot;第 {index} 个工具 {tool_call[&#x27;name&#x27;]} &quot;
+                        f&quot;的结果消息无效：{exc}&quot;
+                    ) from exc
+
+            if on_tool_result is not None:
+                try:
+                    on_tool_result(tool_call, _callback_result(result))
+                except Exception as exc:
+                    if not legacy_user_message_fallback:
+                        _append_skipped_tool_messages(
+                            messages,
+                            validated_calls[index:],
+                            &quot;同一批次中的结果回调失败&quot;,
+                        )
+                    raise RuntimeError(
+                        f&quot;第 {index} 个工具 {tool_call[&#x27;name&#x27;]} &quot;
+                        f&quot;的结果回调失败：{exc}&quot;
+                    ) from exc
+
+        executed_tool_rounds += 1
+</code></pre></details><p>与参考教程的关系：借鉴它从问题到小循环逐步拆解的讲法，不照搬接口。参考使用 Anthropic 的 tool_use/tool_result 块；本课程使用 LangChain 的 tool_calls、AIMessage、ToolMessage，字段和角色约定不同。</p>
+<h3>03 · 这次怎样用百炼跑原版入口？</h3><p>原版 D1-1/2/3 默认使用硅基流动 Hunyuan 模型，D1-4/5 使用硅基流动 DeepSeek，D1-6 默认是百炼 Qwen。本次统一注入百炼 <code>qwen-plus</code>，使用原模块提供的工厂参数，六次均执行各自的 <code>main</code>，没有改动课程源码。</p><ol><li>读取本机 <code>code/.env</code> 中百炼配置，不打印 Key。</li><li>为兼容原版 Key 检查，在运行进程内把百炼值映射到课程所用的配置属性；原 .env 与源码不变。</li><li><code>model_factory</code> 忽略原默认模型名，返回真实百炼客户端。使用非思考模式、无自动重试和有限输出。</li><li><code>client_factory</code> 把数据库定位在隔离目录，并为集合注入真实百炼 Embedding。</li><li>D1-6 的 <code>agent_factory</code> 额外设置16步框架执行限制，并采集实验轨迹。</li></ol><p>因此，这是“原版控制流程 + 百炼适配”的实跑，不是默认供应商零改动直跑，也不是测试替身冒充在线结果。</p><details><summary>展开可运行的百炼适配器</summary><pre class="lesson-code"><code>&quot;&quot;&quot;Run the six original D1 main functions with a local Bailian adapter.
+
+No original course sources or .env values are changed. Real requests require
+--run-online. Database collections are created and deleted by the course mains
+inside a dedicated work/task2/d1 directory. Reports contain synthetic demo data.
+&quot;&quot;&quot;
+import argparse,contextlib,importlib,io,json,logging,os,sys,time
+from datetime import datetime,timezone
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[3]
+sys.path.insert(0,str(ROOT/&#x27;code&#x27;))
+os.environ[&#x27;PYTHON_DOTENV_DISABLED&#x27;]=&#x27;1&#x27;
+os.environ[&#x27;SEEKDB_MODE&#x27;]=&#x27;embedded&#x27;
+os.environ[&#x27;LANGCHAIN_TRACING_V2&#x27;]=&#x27;false&#x27;
+os.environ[&#x27;LANGSMITH_TRACING&#x27;]=&#x27;false&#x27;
+NAMES=[&#x27;d1_1_base&#x27;,&#x27;d1_2_multi_turn&#x27;,&#x27;d1_3_streaming&#x27;,&#x27;d1_4_tool_use_mock&#x27;,&#x27;d1_5_tool_use_seekdb&#x27;,&#x27;d1_6_agent&#x27;]
+def main():
+ ap=argparse.ArgumentParser();ap.add_argument(&#x27;--run-online&#x27;,action=&#x27;store_true&#x27;);ap.add_argument(&#x27;--only&#x27;,type=int,choices=range(1,7));args=ap.parse_args()
+ if not args.run_online: ap.error(&#x27;Real API calls require --run-online&#x27;)
+ import httpx
+ from dotenv import dotenv_values
+ from openai import OpenAI
+ from langchain.chat_models import init_chat_model
+ from langchain.agents import create_agent
+ from langchain_core.callbacks import BaseCallbackHandler
+ from pyseekdb.client.embedding_function import register_embedding_function
+ from seekdb_runtime import create_seekdb_client
+ from config import Config
+ logging.disable(logging.CRITICAL)
+ cfg=dotenv_values(ROOT/&#x27;code/.env&#x27;,interpolate=False);key=cfg.get(&#x27;DASHSCOPE_API_KEY&#x27;)
+ url=cfg.get(&#x27;DASHSCOPE_BASE_URL&#x27;) or &#x27;https://dashscope.aliyuncs.com/compatible-mode/v1&#x27;
+ if not key or url.rstrip(&#x27;/&#x27;)!=&#x27;https://dashscope.aliyuncs.com/compatible-mode/v1&#x27;: raise SystemExit(&#x27;Missing key or unverified endpoint&#x27;)
+ # Match the legacy config names used by the course mains, in memory only.
+ Config.SILICONFLOW_API_KEY=key;Config.SILICONFLOW_BASE_URL=url
+ Config.DASHSCOPE_API_KEY=key;Config.DASHSCOPE_BASE_URL=url
+ out=Path(__file__).parent/&#x27;reports&#x27;;out.mkdir(exist_ok=True)
+ selected=[args.only] if args.only else list(range(1,7))
+ report={&#x27;date&#x27;:datetime.now(timezone.utc).isoformat(),&#x27;model&#x27;:&#x27;qwen-plus&#x27;,&#x27;embedding&#x27;:&#x27;text-embedding-v4&#x27;,&#x27;source&#x27;:&#x27;original D1 main functions; injected model/client factories&#x27;,&#x27;experiments&#x27;:[]}
+ target=out/(&#x27;d1-results.json&#x27; if not args.only else f&#x27;d1-{args.only}-results.json&#x27;)
+ def save():target.write_text(json.dumps(report,ensure_ascii=False,indent=2))
+ calls=0;active=None
+ def before_request(request):
+  nonlocal calls
+  calls+=1
+  if calls&gt;50: raise RuntimeError(&#x27;API call budget exceeded&#x27;)
+  if request.url.host!=&#x27;dashscope.aliyuncs.com&#x27;:raise RuntimeError(&#x27;Unexpected host&#x27;)
+  if active is not None:active[&#x27;http_requests&#x27;]+=1
+ transport=httpx.Client(trust_env=False,follow_redirects=False,timeout=60,event_hooks={&#x27;request&#x27;:[before_request]})
+ api=OpenAI(api_key=key,base_url=url,max_retries=0,http_client=transport)
+ class Trace(BaseCallbackHandler):
+  raise_error=True
+  def on_llm_start(self,serialized,prompts,**kwargs): pass
+  def on_llm_new_token(self,token,**kwargs):
+   if active is not None:active[&#x27;stream_chunks&#x27;]+=1
+  def on_llm_end(self,response,**kwargs):
+   for batch in response.generations:
+    for gen in batch:
+     msg=getattr(gen,&#x27;message&#x27;,None)
+     if msg is not None:active[&#x27;model_responses&#x27;].append({&#x27;content&#x27;:msg.content,&#x27;tool_calls&#x27;:getattr(msg,&#x27;tool_calls&#x27;,[]),&#x27;usage&#x27;:getattr(msg,&#x27;usage_metadata&#x27;,None),&#x27;finish_reason&#x27;:getattr(msg,&#x27;response_metadata&#x27;,{}).get(&#x27;finish_reason&#x27;)})
+   save()
+  def on_tool_end(self,output,**kwargs):
+   active[&#x27;tool_results&#x27;].append(getattr(output,&#x27;content&#x27;,str(output)));save()
+ trace=Trace();cache={}
+ @register_embedding_function
+ class BailianEmbedding:
+  dimension=1024
+  @staticmethod
+  def name():return &#x27;d1_bailian_learning&#x27;
+  def get_config(self):return {}
+  @staticmethod
+  def build_from_config(config):return BailianEmbedding()
+  def __call__(self,documents):
+   if isinstance(documents,str):documents=[documents]
+   missing=list(dict.fromkeys(d for d in documents if d not in cache))
+   for i in range(0,len(missing),10):
+    batch=missing[i:i+10];r=api.embeddings.create(model=&#x27;text-embedding-v4&#x27;,input=batch,dimensions=1024,encoding_format=&#x27;float&#x27;)
+    for row in r.data:cache[batch[row.index]]=row.embedding
+    active[&#x27;embedding_calls&#x27;].append({&#x27;texts&#x27;:len(batch),&#x27;tokens&#x27;:r.usage.total_tokens});save()
+   return [cache[d] for d in documents]
+ def model_factory(_original_name,**_original_config):
+  return init_chat_model(&#x27;qwen-plus&#x27;,model_provider=&#x27;openai&#x27;,api_key=key,base_url=url,http_client=transport,max_retries=0,timeout=60,max_tokens=1000,temperature=0,extra_body={&#x27;enable_thinking&#x27;:False},stream_usage=True,callbacks=[trace])
+ class DatabaseAdapter:
+  def __init__(self,path):self.db=create_seekdb_client(path)
+  def __getattr__(self,name):return getattr(self.db,name)
+  def create_collection(self,**kwargs):return self.db.create_collection(**kwargs,embedding_function=BailianEmbedding())
+  def close(self):self.db.__exit__(None,None,None)
+ def agent_factory(**kwargs):
+  return create_agent(**kwargs).with_config({&#x27;recursion_limit&#x27;:16,&#x27;callbacks&#x27;:[trace]})
+ try:
+  for number in selected:
+   active={&#x27;number&#x27;:number,&#x27;file&#x27;:NAMES[number-1]+&#x27;.py&#x27;,&#x27;status&#x27;:&#x27;running&#x27;,&#x27;http_requests&#x27;:0,&#x27;stream_chunks&#x27;:0,&#x27;embedding_calls&#x27;:[],&#x27;model_responses&#x27;:[],&#x27;tool_results&#x27;:[]};report[&#x27;experiments&#x27;].append(active);save()
+   module=importlib.import_module(&#x27;D1.&#x27;+NAMES[number-1]);stream=io.StringIO();start=time.monotonic()
+   try:
+    kwargs={&#x27;model_factory&#x27;:model_factory}
+    if number&gt;=5:
+     dbpath=ROOT/&#x27;work/task2/d1&#x27;/f&#x27;experiment-{number}&#x27;;dbpath.mkdir(parents=True,exist_ok=True)
+     kwargs.update(client_factory=lambda path:DatabaseAdapter(path),db_path=dbpath)
+    if number==6:kwargs[&#x27;agent_factory&#x27;]=agent_factory
+    with contextlib.redirect_stdout(stream):code=module.main(**kwargs)
+    active[&#x27;status&#x27;]=&#x27;passed&#x27; if code==0 else &#x27;failed&#x27;;active[&#x27;exit_code&#x27;]=code
+   except Exception as exc:
+    active[&#x27;status&#x27;]=&#x27;failed&#x27;;active[&#x27;error_type&#x27;]=type(exc).__name__;active[&#x27;http_status&#x27;]=getattr(exc,&#x27;status_code&#x27;,None)
+   active[&#x27;seconds&#x27;]=round(time.monotonic()-start,3);active[&#x27;stdout&#x27;]=stream.getvalue();save()
+   print(f&#x27;D1-{number}: {active[&quot;status&quot;]}, {active[&quot;http_requests&quot;]} requests&#x27;,flush=True)
+ finally:api.close()
+ return 0 if all(x[&#x27;status&#x27;]==&#x27;passed&#x27; for x in report[&#x27;experiments&#x27;]) else 1
+if __name__==&#x27;__main__&#x27;:raise SystemExit(main())
+</code></pre></details><p><a href="./run_d1.py" download>下载 run_d1.py</a>，放到课程仓库的 <code>learning/task2/d1/run_d1.py</code>。这不是脱离课程仓库的独立程序，需要原版 D1 文件和已安装依赖。</p>
+<h3>04 · 运行命令与真实结果</h3><pre><code># 从课程仓库根目录运行全部六个实验；会调用真实百炼模型
+.venv/bin/python learning/task2/d1/run_d1.py --run-online
+
+# 只运行某一节，例如 D1-3
+.venv/bin/python learning/task2/d1/run_d1.py --run-online --only 3</code></pre><p>脚本不带 --run-online 时不会发出模型请求；复跑会更新对应报告。D1-5/6 按原版 finally 清理本次集合并关闭数据库。本次没有跳过任何一节。</p><div class="table-wrap"><table><thead><tr><th>实验</th><th>执行状态</th><th>HTTP 请求</th><th>整节耗时</th></tr></thead><tbody><tr><td><a href="#d1-1">D1-1</a></td><td>入口返回 0</td><td>1</td><td>2.053 秒</td></tr><tr><td><a href="#d1-2">D1-2</a></td><td>入口返回 0</td><td>1</td><td>13.46 秒</td></tr><tr><td><a href="#d1-3">D1-3</a></td><td>入口返回 0</td><td>1</td><td>2.201 秒</td></tr><tr><td><a href="#d1-4">D1-4</a></td><td>入口返回 0</td><td>2</td><td>5.99 秒</td></tr><tr><td><a href="#d1-5">D1-5</a></td><td>入口返回 0</td><td>4</td><td>13.493 秒</td></tr><tr><td><a href="#d1-6">D1-6</a></td><td>入口返回 0</td><td>11</td><td>30.391 秒</td></tr></tbody></table></div>
+<p>D1-3 记录到 27 个消息块；D1-4/5 各发生一次工具调用；D1-6 的三道默认问题各发生一次工具调用，另有一次启动联通探测。D1-6 的节点更新不是 D1-3 那种逐字流。</p><p>六节共 20 次 HTTP 请求：14 次对话请求、6 次 Embedding 请求。服务端用量合计 5417 Token，其中生成模型 5223、Embedding 194；未查询实际费用。模型输出因运行而异，本次没有把单次耗时当成性能基准。</p><p>额外执行 D1 的可运行性与工具循环测试，27 项通过。这些测试使用测试设施验证异常路径，不计入上述真实调用。</p>
+<h3>05 · 跑通之后，还要看哪些问题？</h3><ul><li><strong>答案超出证据：</strong>D1-4 的模拟知识只说明支持哪些检索方式，回答却展开了实现细节；D1-5/6 也添加了返回资料未明确说明的参数或能力。保留原始输出作为观察样本，不把它们当成权威技术文档。</li><li><strong>流不是一串完整 JSON：</strong>工具参数可能分块返回，聚合并验证后才能执行；不能看到半个参数就调用函数。</li><li><strong>调用次数不等于工具次数：</strong>一次工具执行通常需要前后两次模型响应，还可能包含多个工具或向量请求。</li><li><strong>资料问答不等于记忆系统：</strong>D1-2 手工提供历史，D1-6 每题重新输入，没有配置跨会话持久记忆。</li><li><strong>RAG 是例子，不是六节的全部：</strong>这组代码的主线是模型 API、消息和 Tool Use；D3 才展开检索策略与评测。</li></ul>
+<h3>参考与阅读顺序</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/tree/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1">本次课程 D1 固定版本</a> · <a href="https://github.com/shareAI-lab/learn-claude-code/blob/main/s01_agent_loop/README.md">参考讲解：s01 Agent Loop</a></p><div class="page-links"><a href="#d1-1">从 D1-1 开始读 →</a><a href="#rag">保留的 D3 / RAG 拓展笔记</a></div></div></article></section>
+
+<section class="panel" id="d1-1" aria-labelledby="d1-1-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-1</span><h2 id="d1-1-title">单次调用：一次请求从哪里开始？</h2><p>把消息发送给模型，并从返回对象中取出文字。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 132" role="img" aria-labelledby="diagram-d1-1-svg-title"><title id="diagram-d1-1-svg-title">D1-1 的数据与执行路径</title><defs><marker id="diagram-d1-1-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">角色与问题</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">messages</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-1-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">初始化模型</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">llm</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-1-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">发送请求</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">invoke</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-1-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">读取回答</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">content</text></svg><figcaption>D1-1 的数据与执行路径</figcaption></figure><h3>先看问题：模型对象与回答对象不是一回事</h3><p><code>llm</code> 是客户端封装，保存调用模型所需的配置；<code>response</code> 是一次调用的结果。创建客户端通常并未完成问答，执行 <code>invoke</code> 才发送请求。</p><h3>核心代码：run_demo 从输入到输出</h3><pre class="lesson-code"><code>def run_demo(llm):
+    response = llm.invoke(
+        [
+            (&quot;system&quot;, &quot;你是一个简洁高效的技术助手。用中文回答，尽量用一两句话。&quot;),
+            (&quot;user&quot;, &quot;什么是 RAG？&quot;),
+        ]
+    )
+    print(response.content)
+    return response</code></pre><ol><li>列表中的第一条 system 消息指定角色、语言和长度；第二条 user 消息才是本次问题。</li><li><code>llm.invoke(...)</code> 等待完整响应，返回 LangChain 的消息对象。</li><li><code>response.content</code> 是内容字段，不是整个响应对象；打印它只是终端展示。</li><li><code>return response</code> 保留对象，让调用方继续检查用量、结束原因等元信息。</li></ol><h3>入口为什么先检查 Key？</h3><pre class="lesson-code"><code>def main(model_factory=init_chat_model) -&gt; int:
+    # Key 边界：模型初始化前失败，避免产生任何外部调用。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    run_demo(llm)
+    return 0</code></pre><p><code>main</code> 先检查配置，再创建模型，再调用 <code>run_demo</code>，最后返回退出码 0。缺 Key 时返回 1。文件末尾的 <code>SystemExit(main())</code> 把这个结果交给命令行。Key 存在只代表已配置，不保证服务端接受。</p><h3>这次百炼适配改变了什么？</h3><p>原版模型为硅基流动的 <code>tencent/Hunyuan-MT-7B</code>。本次注入 <code>model_factory</code>，实际创建百炼 <code>qwen-plus</code>，仍执行原版 <code>main → run_demo → invoke</code>。<code>model_provider="openai"</code> 指兼容接口实现，不表示请求发往 OpenAI。</p><h3>变量地图：从配置到消息对象</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>MODEL_NAME</td><td>str</td><td>原版默认模型名；本次工厂用 qwen-plus 替换。</td></tr><tr><td>model_factory</td><td>可调用对象</td><td>接收模型名与配置，返回具有 invoke/stream 能力的模型客户端。</td></tr><tr><td>llm</td><td>BaseChatModel 的具体实现</td><td>保存请求配置，提供调用方法；不是模型参数文件。</td></tr><tr><td>输入消息</td><td>list[tuple[str, str]]</td><td>每个元组是角色与正文；LangChain 会转换为消息结构。</td></tr><tr><td>response</td><td>AIMessage</td><td>一次模型响应，包含 content，可能带 usage_metadata、response_metadata 等。</td></tr><tr><td>response.content</td><td>本次为 str</td><td>供人阅读的正文；其他模型或模式也可能用内容块列表。</td></tr></tbody></table></div><h3>沿着入口追一次执行顺序</h3><ol><li>Python 执行 import，把函数和类定义加载进内存。</li><li><code>Path(__file__).resolve().parents[1]</code> 从当前 D1 文件定位到 code 目录，插入 sys.path，从而能导入上一级的 config。</li><li>直接运行文件时，<code>__name__ == "__main__"</code> 成立，调用 main；被适配器 import 时不自动运行末尾入口，随后由适配器显式调用 main。</li><li>Key 检查通过后调用模型工厂。这里的依赖注入让同一实验逻辑可以接不同供应商，也方便离线测试。</li><li>run_demo 发请求，得到 AIMessage，打印正文，返回对象。</li><li>main 返回整数 0。返回消息对象与返回进程退出码是两个不同层面的返回值。</li></ol><h3>这段调用在请求层大致长什么样？</h3><pre class="lesson-code"><code>{
+  &quot;model&quot;: &quot;qwen-plus&quot;,
+  &quot;messages&quot;: [
+    {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个简洁高效的技术助手。用中文回答，尽量用一两句话。&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;什么是 RAG？&quot;}
+  ]
+}</code></pre><p>这是核心字段示意，不是抓取的原始 HTTP 包；实际请求还包含适配器设置的输出上限等字段。鉴权在请求头中处理，不应写入 messages。LangChain 帮你做格式转换与响应封装，并没有省去网络调用。</p><h3>检查结果时，别只读 content</h3><pre class="lesson-code"><code>response = llm.invoke(messages)
+print(response.content)
+print(response.usage_metadata)      # 有些服务可能不返回
+print(response.response_metadata)  # 可包含 finish_reason</code></pre><p>上面是本地诊断示意。finish_reason 为 stop 通常表示模型正常结束；length 表示达到长度限制，不能把被截断的回答算作完整输出。网络超时、鉴权错误等则是调用异常，不会正常进入后续 print。</p><h3>常见疑问与小练习解析</h3><details><summary>把 system 改为 user，模型还会回应吗？</summary><p>可能仍会回应，但指令的角色和优先级发生了变化。system 用于设定行为要求，user 表示本次输入；不能用“能返回文字”证明角色设置等价。</p></details><details><summary>变量名都叫 response，是否每次是同一个答案？</summary><p>变量名只是引用位置。每次 invoke 都可能生成新的对象并产生用量。本次 temperature=0 也不应被理解成跨时间、跨后端绝对确定。</p></details><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 1 条；工具调用记录 0 条；HTTP 请求 1 次（含向量请求）。总耗时 2.053 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>RAG（Retrieval-Augmented Generation，检索增强生成）是一种将外部知识检索与大语言模型生成能力结合的技术：先从知识库中检索相关文档片段，再将其作为上下文输入模型，从而生成更准确、可溯源、实时性强的回答。</code></pre></details><h3>动手改一处，再验证</h3><p>把 user 问题改成一句不同的技术问题，预测哪些消息会变化、哪些配置无需变化。不要把 Key 写进代码。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_1_base.py" target="_blank" rel="noopener">查看固定版本的 d1_1_base.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.chat_models import init_chat_model
+
+MODEL_NAME = &quot;tencent/Hunyuan-MT-7B&quot;
+
+
+def run_demo(llm):
+    response = llm.invoke(
+        [
+            (&quot;system&quot;, &quot;你是一个简洁高效的技术助手。用中文回答，尽量用一两句话。&quot;),
+            (&quot;user&quot;, &quot;什么是 RAG？&quot;),
+        ]
+    )
+    print(response.content)
+    return response
+
+
+def main(model_factory=init_chat_model) -&gt; int:
+    # Key 边界：模型初始化前失败，避免产生任何外部调用。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    run_demo(llm)
+    return 0
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main())</code></pre></details><div class="page-links"><a href="#task2">← 上一节</a><a href="#d1-2">下一节 →</a></div></div></article></section>
+<section class="panel" id="d1-2" aria-labelledby="d1-2-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-2</span><h2 id="d1-2-title">多轮对话：记忆其实在消息列表里</h2><p>模型每次看到的上下文，由程序明确提供。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 132" role="img" aria-labelledby="diagram-d1-2-svg-title"><title id="diagram-d1-2-svg-title">D1-2 的数据与执行路径</title><defs><marker id="diagram-d1-2-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">system</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">行为要求</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-2-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">user + assistant</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">已有对话</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-2-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">user</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">当前追问</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-2-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">invoke</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">完整历史一起发送</text></svg><figcaption>D1-2 的数据与执行路径</figcaption></figure><h3>先看问题：“它”指什么？</h3><p>问题“它和直接把文档塞进 Prompt 有什么区别？”依赖上文的 RAG。单独发送这句话可能缺少指代对象；发送历史则把上下文补齐。</p><h3>四条消息如何排列</h3><pre class="lesson-code"><code>MESSAGES = [
+    (&quot;system&quot;, &quot;你是一个简洁高效的技术助手。&quot;),
+    (&quot;user&quot;, &quot;什么是 RAG？&quot;),
+    (&quot;assistant&quot;, &quot;RAG 是检索增强生成，先检索相关内容，再基于内容生成回答。&quot;),
+    (&quot;user&quot;, &quot;它和直接把文档塞进 Prompt 有什么区别？&quot;),
+]</code></pre><p>四条消息依次是 system、user、assistant、user。角色不能随意互换：assistant 表示历史助手说过的话，user 表示用户输入。</p><h3>这一版并没有自动追加历史</h3><pre class="lesson-code"><code>def run_demo(llm):
+    response = llm.invoke(MESSAGES)
+    print(response.content)
+    return response</code></pre><p>脚本只调用一次 <code>invoke</code>。中间那句 RAG 解释是源代码中的固定字符串，不是运行 D1-1 后自动传过来的输出。每次启动 D1-2 都重新构造这组消息。</p><h3>真正交互式多轮要补哪两步？</h3><pre class="lesson-code"><code>messages.append((&quot;user&quot;, question))
+response = llm.invoke(messages)
+messages.append(response)</code></pre><p>以上是帮助理解的扩展示意，不是本次运行源码。既追加用户问题，也追加真实助手消息；下一次调用继续发送列表。列表留在进程内不等于持久记忆，关闭程序后还需另行保存和恢复。</p><h3>上下文的成本与边界</h3><p>历史随请求一起发送，会占用输入 Token。历史过长需要选择、摘要或检索，不能无限追加。也不能把一次聊天中的回答当作已经核实的长期事实。</p><h3>变量地图：历史不是隐藏在模型对象里</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>MESSAGES</td><td>模块级 list</td><td>四条预先写好的消息，启动脚本时创建。</td></tr><tr><td>("assistant", "...")</td><td>角色与内容元组</td><td>人为提供的一条历史回答，不是这次网络调用的输出。</td></tr><tr><td>llm.invoke(MESSAGES)</td><td>一次方法调用</td><td>将整段列表作为当前请求的上下文。</td></tr><tr><td>response</td><td>AIMessage</td><td>只对应最后一次追问的响应，不是所有轮次的集合。</td></tr></tbody></table></div><h3>把上下文变化写出来</h3><p>真正连续两轮时，程序需要维护如下状态；这是扩展思路，原 D1-2 只演示最后一种输入形态。</p><pre class="lesson-code"><code>开始：  [system]
+第一问：[system, user_1]
+第一答：[system, user_1, assistant_1]
+第二问：[system, user_1, assistant_1, user_2]
+第二答：[system, user_1, assistant_1, user_2, assistant_2]</code></pre><p>每次只把 user_2 发过去，就丢掉“它”的指代背景；只追加用户而漏掉助手回答，则模型也不知道上一轮回答具体说了什么。</p><h3>可以怎样改成一个有限的两轮实验？</h3><pre class="lesson-code"><code>messages = [(&quot;system&quot;, &quot;你是一个简洁的技术助手。&quot;)]
+questions = [&quot;什么是 RAG？&quot;, &quot;它和直接把文档塞进 Prompt 有什么区别？&quot;]
+for question in questions:
+    messages.append((&quot;user&quot;, question))
+    answer = llm.invoke(messages)
+    messages.append(answer)
+    print(answer.content)</code></pre><p>这是可放进已配置模型脚本中的扩展示例，不是独立可执行文件，也未在本次额外发起请求。这里真实调用两次，并把第一答加入第二次输入；原版 D1-2 只真实调用一次，第一答由常量提供。</p><h3>历史真实性也影响答案</h3><p>如果手工历史里写了一个错误定义，模型可能沿着它继续解释。role=assistant 不会把文本变成已经验证的事实。调试时要检查实际发送的列表，而不只看屏幕上曾显示过什么。</p><details><summary>为什么把历史保存到 JSON 后仍不算“自动记忆”？</summary><p>保存只是持久化。恢复时还需要读回、选择与任务相关的信息、保持角色与顺序，再提供给本次模型调用。D1-2 没有实现这些跨会话步骤。</p></details><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 1 条；工具调用记录 0 条；HTTP 请求 1 次（含向量请求）。总耗时 13.46 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>这是个关键问题！RAG 和「把文档直接塞进 Prompt」（即“Prompt 注入”或“上下文拼接”）看似目标相似，但本质有根本区别，主要体现在**可扩展性、准确性、成本与安全性**四个维度：
+
+| 维度 | RAG（检索增强生成） | 直接塞文档进 Prompt |
+|------|----------------------|------------------------|
+| **原理** | 先用向量/关键词检索出**最相关的小片段**（如1–3个段落），再将这些片段 + 问题送入 LLM 生成答案。 | 把整篇/多篇文档（甚至整个知识库）全文或大段文本硬塞进 Prompt，让 LLM “自己找答案”。 |
+| **上下文长度限制** | ✅ 规避限制：只传检索到的少量相关内容（如512 token），适配模型输入窗口。 | ❌ 极易超限：长文档 → Prompt 过长 → 被截断或报错（尤其对 4K/8K 窗口模型）。 |
+| **准确性和相关性** | ✅ 更高：聚焦精准片段，减少噪声干扰，LLM 不易“胡编”无关内容。 | ❌ 易失真：大量无关文本会稀释关键信息，LLM 可能忽略重点、混淆事实，甚至幻觉。 |
+| **成本与延迟** | ✅ 更低：传输/处理 token 少；可缓存/复用检索结果；支持异步预检索。 | ❌ 更高：每次请求都传巨量文本 → API 费用飙升、响应变慢、token 浪费严重。 |
+| **可维护性 &amp; 安全性** | ✅ 支持动态更新：只需更新向量库，无需改 Prompt 或重训模型；可过滤敏感/过期文档。 | ❌ 静态脆弱：文档一改就要重写 Prompt；敏感信息可能直接暴露在 prompt 日志中（安全风险！）。 |
+
+✅ 简单类比：  
+- **RAG** = 图书馆员先根据你的问题快速查出 2 本最相关的书的第3章，再帮你总结。  
+- **直接塞文档** = 把整个图书馆（含1000本书）搬进你家客厅，让你自己翻——累、慢、还容易找错。
+
+💡 补充：RAG 不是万能的，它依赖检索质量（如分块策略、向量模型、重排序等），但它是目前**平衡效果、效率与工程可行性的主流方案**。
+
+需要我举例说明 RAG 的典型流程（从文档切块→向量化→检索→生成）吗？</code></pre></details><h3>动手改一处，再验证</h3><p>移除历史 assistant 消息后，问题还够明确吗？设计一次只改变这一个条件的对照，避免同时换模型和提示。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_2_multi_turn.py" target="_blank" rel="noopener">查看固定版本的 d1_2_multi_turn.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.chat_models import init_chat_model
+
+MODEL_NAME = &quot;tencent/Hunyuan-MT-7B&quot;
+
+
+MESSAGES = [
+    (&quot;system&quot;, &quot;你是一个简洁高效的技术助手。&quot;),
+    (&quot;user&quot;, &quot;什么是 RAG？&quot;),
+    (&quot;assistant&quot;, &quot;RAG 是检索增强生成，先检索相关内容，再基于内容生成回答。&quot;),
+    (&quot;user&quot;, &quot;它和直接把文档塞进 Prompt 有什么区别？&quot;),
+]
+
+
+def run_demo(llm):
+    response = llm.invoke(MESSAGES)
+    print(response.content)
+    return response
+
+
+def main(model_factory=init_chat_model) -&gt; int:
+    # Key 边界：模型初始化前失败，避免产生任何外部调用。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    run_demo(llm)
+    return 0
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main())</code></pre></details><div class="page-links"><a href="#d1-1">← 上一节</a><a href="#d1-3">下一节 →</a></div></div></article></section>
+<section class="panel" id="d1-3" aria-labelledby="d1-3-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-3</span><h2 id="d1-3-title">流式输出：先看到一部分，而不是先完成回答</h2><p>stream 返回可迭代的消息块，程序边接收边显示。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 132" role="img" aria-labelledby="diagram-d1-3-svg-title"><title id="diagram-d1-3-svg-title">D1-3 的数据与执行路径</title><defs><marker id="diagram-d1-3-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">发起 stream</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">一次模型请求</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-3-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">迭代 chunk</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">逐块接收</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-3-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">print + flush</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">立即显示</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-3-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">收集 chunks</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">结束后可复查</text></svg><figcaption>D1-3 的数据与执行路径</figcaption></figure><h3>invoke 与 stream 的差别</h3><p><code>invoke</code> 给出完整消息；<code>stream</code> 让调用方逐个处理增量消息块。它通常是一条持续传输的请求，不是每收到一块就重新调用一次模型，也不能保证总耗时更短。</p><h3>逐行拆开 for 循环</h3><pre class="lesson-code"><code>def run_demo(llm):
+    chunks = []
+    for chunk in llm.stream(
+        [
+            (&quot;system&quot;, &quot;你是一个技术助手。&quot;),
+            (&quot;user&quot;, &quot;用三句话解释什么是向量数据库。&quot;),
+        ]
+    ):
+        chunks.append(chunk)
+        print(chunk.content, end=&quot;&quot;, flush=True)
+    print()
+    return chunks</code></pre><ol><li><code>chunks = []</code> 准备保存消息块，便于实验后分析。</li><li><code>llm.stream(...)</code> 发出请求，返回迭代器；for 循环在新块到达时继续。</li><li><code>chunks.append(chunk)</code> 保存的是块对象，而不是只有文字。</li><li><code>end=""</code> 不在每块后换行；<code>flush=True</code> 及时刷新终端缓冲区。</li><li>循环结束后单独打印换行，返回全部块。</li></ol><h3>一个 chunk 不等于一个汉字</h3><p>块可能包含一段文字，也可能只包含元信息。不能用块数代替 Token 数。工具调用还可能把函数名或 JSON 参数分成多个块，所以需要先聚合完整消息，再解析和执行。</p><h3>想测速度，需要分开三个时间</h3><p>开始请求到首个非空文字，是首字等待；开始到完整结束，是总耗时；文本生成之外还有网络、渲染等时间。本次报告记录了整段实验耗时与块数量，没有单独测首字等待，不能据此给出首字性能结论。</p><h3>变量地图：迭代器、消息块和文本</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>llm.stream(...)</td><td>迭代器</td><td>按到达顺序产出消息块；不是完整字符串。</td></tr><tr><td>chunk</td><td>AIMessageChunk</td><td>一块响应，可以包含 content、元信息或工具参数片段。</td></tr><tr><td>chunks</td><td>list</td><td>保存已到达块的对象，随着循环增长。</td></tr><tr><td>chunk.content</td><td>本实验为文本增量</td><td>打印这一块新增的内容，不应重复打印所有历史块。</td></tr><tr><td>flush=True</td><td>print 的关键字参数</td><td>刷新 Python 输出缓冲，不控制模型生成速度。</td></tr></tbody></table></div><h3>逐帧看一次流式处理</h3><pre class="lesson-code"><code>起点：chunks = []
+第1块：chunk.content = &quot;向量&quot;       → chunks 长度 1 → 终端显示 向量
+第2块：chunk.content = &quot;数据库&quot;     → chunks 长度 2 → 终端显示 向量数据库
+第3块：chunk.content = &quot;用于……&quot;     → chunks 长度 3 → 终端继续追加
+结束：迭代器停止，for 循环退出，打印换行</code></pre><p>分块内容是示意，真实块边界由服务和 SDK 决定，不固定按词或汉字切分。本次记录到27块，并不是27 Token。</p><h3>为什么工具参数必须聚合后再读？</h3><pre class="lesson-code"><code>第1块参数：{&quot;query&quot;: &quot;seek
+第2块参数：db 检索方式&quot;}
+合并后：  {&quot;query&quot;: &quot;seekdb 检索方式&quot;}</code></pre><p>第一块不是合法完整 JSON，不能立即 json.loads 或执行函数。D1 公共循环用消息块的加法聚合，保留 tool_call_chunks 等结构，再检查原始 JSON 是否完整；把所有东西只拼成 content 文本会丢掉工具字段。</p><h3>流中断时怎样判断？</h3><p>屏幕已经显示部分文本，不代表最终完成。如果迭代时抛出网络异常，for 循环不会自然走到尾部。应用应区分“已显示部分内容”和“请求成功结束”，不能遇到中断就无条件重试带副作用的工具。</p><details><summary>把 print 放到循环外，会变回 invoke 吗？</summary><p>网络仍是流式请求，只是界面等到结束才展示。传输方式与展示时机是两个层次；你会失去逐步看到输出的体验，但调用并未自动改为 invoke。</p></details><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 1 条；工具调用记录 0 条；HTTP 请求 1 次（含向量请求）。总耗时 2.201 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>向量数据库是一种专门用于高效存储、索引和检索高维向量（如文本、图像、音频等经模型编码后的嵌入向量）的数据库系统。  
+它通过近似最近邻（ANN）搜索算法（如HNSW、IVF）在海量向量中快速找到语义最相似的条目，而非依赖传统数据库的精确匹配或结构化查询。  
+与关系型数据库不同，向量数据库以“语义相似性”为核心能力，广泛应用于AI驱动的推荐、检索增强生成（RAG）、图像搜索等场景。</code></pre></details><h3>动手改一处，再验证</h3><p>在不改提示的情况下，用时间戳记录第一个非空 content 和流结束的时刻。空的元信息块不应算作首字。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_3_streaming.py" target="_blank" rel="noopener">查看固定版本的 d1_3_streaming.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.chat_models import init_chat_model
+
+MODEL_NAME = &quot;tencent/Hunyuan-MT-7B&quot;
+
+
+def run_demo(llm):
+    chunks = []
+    for chunk in llm.stream(
+        [
+            (&quot;system&quot;, &quot;你是一个技术助手。&quot;),
+            (&quot;user&quot;, &quot;用三句话解释什么是向量数据库。&quot;),
+        ]
+    ):
+        chunks.append(chunk)
+        print(chunk.content, end=&quot;&quot;, flush=True)
+    print()
+    return chunks
+
+
+def main(model_factory=init_chat_model) -&gt; int:
+    # Key 边界：模型初始化前失败，避免产生任何外部调用。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    run_demo(llm)
+    return 0
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main())</code></pre></details><div class="page-links"><a href="#d1-2">← 上一节</a><a href="#d1-4">下一节 →</a></div></div></article></section>
+<section class="panel" id="d1-4" aria-labelledby="d1-4-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-4</span><h2 id="d1-4-title">模拟工具：模型提出请求，Python 真正执行</h2><p>先用内存字典把工具调用闭环看清楚。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 190" role="img" aria-labelledby="diagram-d1-4-svg-title"><title id="diagram-d1-4-svg-title">D1-4 的数据与执行路径</title><defs><marker id="diagram-d1-4-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">问题 + 工具描述</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">发送给模型</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-4-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">tool_calls</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">名字与参数</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-4-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">Python invoke</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">执行模拟查询</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-4-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">结果回传</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">再次请求模型</text><path d="M675.0,98 V145 H281.66666666666663 V99" fill="none" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-4-arrow)"/><text x="400" y="175" text-anchor="middle" font-size="14" fill="#59677d">工具结果加入 messages，再请求模型；无工具调用时结束</text></svg><figcaption>D1-4 的数据与执行路径</figcaption></figure><h3>先区分声明与执行</h3><p><code>@tool</code> 将函数名称、文档字符串和参数类型包装成可描述的工具。<code>bind_tools</code> 告诉模型有哪些工具可选，不会替模型执行 Python。执行发生在本地循环调用 <code>tool.invoke</code> 的位置。</p><h3>工具函数内部做了什么？</h3><pre class="lesson-code"><code>@tool
+def query_knowledge_base(query: str) -&gt; str:
+    &quot;&quot;&quot;从模拟知识库中检索产品功能、技术文档或操作指南。&quot;&quot;&quot;
+    fake_docs = {
+        &quot;检索方式&quot;: &quot;seekdb 支持关键词、语义向量和混合检索。&quot;,
+        &quot;部署模式&quot;: &quot;seekdb 支持嵌入模式和服务器模式。&quot;,
+        &quot;SDK&quot;: &quot;pyseekdb 是 seekdb 的 Python SDK，支持 Schemaless API。&quot;,
+    }
+    results = [
+        doc
+        for key, doc in fake_docs.items()
+        if key in query or any(word in query for word in key)
+    ]
+    return &quot;\n\n&quot;.join(results or fake_docs.values())</code></pre><p><code>fake_docs</code> 是内存字典。条件中的 <code>for word in key</code> 实际逐个遍历汉字，匹配较宽；没有结果时返回全部模拟文档。它不是向量搜索，也没有数据库或实时知识更新。生成模型是真实调用，工具数据才是模拟的。</p><h3>注册、绑定、启动循环</h3><pre class="lesson-code"><code>def run_demo(llm):
+    print(&quot;&gt;&gt;&gt; 用户提问：seekdb 支持哪些检索方式？混合检索是怎么实现的？&quot;)
+    llm_with_tools = llm.bind_tools([query_knowledge_base])
+    response = run_tool_call_loop(
+        llm_with_tools,
+        [
+            (&quot;system&quot;, &quot;你是技术文档助手，产品问题请先查询知识库。&quot;),
+            (&quot;user&quot;, &quot;seekdb 支持哪些检索方式？混合检索是怎么实现的？&quot;),
+        ],
+        {query_knowledge_base.name: query_knowledge_base},
+        max_rounds=5,
+        on_tool_result=print_tool_result,
+        legacy_user_message_fallback=True,
+    )
+    print(f&quot;&gt;&gt;&gt; 模型最终回答：\n{response.content}&quot;)
+    return response</code></pre><p>工具映射 <code>{name: tool}</code> 是可执行白名单。<code>on_tool_result</code> 负责打印观察结果；它不是模型推理过程。<code>max_rounds=5</code> 限制工具执行轮数，不等于总共最多五次 HTTP 请求。</p><h3>公共循环：每轮究竟改变什么？</h3><pre class="lesson-code"><code>response = aggregate_stream(model.stream(messages))
+validated_calls = _validate_tool_calls(...)
+if not validated_calls:
+    return response
+for tool_call, tool in validated_calls:
+    result = tool.invoke(tool_input)
+    # 将结果追加到 messages
+executed_tool_rounds += 1</code></pre><p>这段是省略细节的阅读骨架。真正源码先聚合流，再整批检查工具名、完整 JSON、结构和必要 ID，验证通过后才执行。无工具调用且有非空内容时结束。达到工具轮数上限后仍允许模型生成最终回答；若继续要求工具，就报错。</p><h3>重要区别：课程兼容模式与标准协议</h3><p>D1-4/5 显式传入 <code>legacy_user_message_fallback=True</code>，将工具名、参数、结果整理成 user 文本追加。该分支不追加原始 assistant 工具请求。标准分支则先追加包含 tool_calls 的 assistant 消息，再追加带相同 <code>tool_call_id</code> 的 ToolMessage。两者不能混为一谈。</p><pre class="lesson-code"><code>标准：user → assistant(tool_calls, id) → tool(tool_call_id=id) → assistant
+本次 D1-4/5：user → user(格式化工具结果) → 再请求模型</code></pre><h3>变量地图：工具请求如何找到函数</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>query_knowledge_base</td><td>LangChain BaseTool</td><td>@tool 包装后的对象，具有 name、参数描述和 invoke。</td></tr><tr><td>llm_with_tools</td><td>绑定工具描述的可调用对象</td><td>每次请求带上工具 schema，模型可以返回 tool_calls。</td></tr><tr><td>tools_by_name</td><td>dict[str, BaseTool]</td><td>本地映射表；名字匹配才允许执行。</td></tr><tr><td>tool_call["args"]</td><td>dict</td><td>模型生成、经解析校验的参数，例如 {"query":"seekdb 检索方式"}。</td></tr><tr><td>result</td><td>本实验为 str</td><td>本地函数实际返回的检索内容，不是模型自己写的结果。</td></tr><tr><td>messages</td><td>可变列表</td><td>每轮追加结果，下一轮请求读到更多上下文。</td></tr></tbody></table></div><h3>一个工具请求的结构示意</h3><pre class="lesson-code"><code>{
+  &quot;name&quot;: &quot;query_knowledge_base&quot;,
+  &quot;args&quot;: {&quot;query&quot;: &quot;seekdb 检索方式&quot;},
+  &quot;id&quot;: &quot;call_example&quot;,
+  &quot;type&quot;: &quot;tool_call&quot;
+}</code></pre><p>这是 LangChain 标准化后的示意，不是当前真实调用ID。name 用于在映射表找工具，args 传给工具函数，id 用于在标准协议下关联请求和结果。模型说“我要查一下”只是普通文字，不能代替这个结构。</p><h3>为什么先校验整批，再逐个执行？</h3><p>同一次模型响应可能请求多个工具。公共循环先检查所有请求的名称、参数 JSON 和必要 ID，再进入执行循环。这样能在后面的请求结构非法时，避免前面的工具已经产生副作用。本课程工具只查询，真实应用中还可能有写入操作。</p><p><code>json.loads</code> 只解析 JSON，不执行表达式。源码拒绝未知工具名、非对象参数、不完整 JSON；标准分支还要求ID非空且不重复。不要用 eval 处理模型生成的参数。</p><h3>兼容模式里 messages 实际怎样变化？</h3><pre class="lesson-code"><code>第一轮输入：
+  system: 产品问题先查知识库
+  user: seekdb 支持哪些检索方式？
+
+模型返回 tool_calls；Python 执行函数。
+第二轮输入：
+  system: 产品问题先查知识库
+  user: seekdb 支持哪些检索方式？
+  user: 工具名称、调用参数、调用 ID、执行结果（格式化文本）</code></pre><p>这是当前 D1-4/5 的 legacy 分支。模型上一条工具请求没有按 assistant 对象追加；结果也不是 ToolMessage。它是兼容处理，不是标准工具协议的推荐通用模板。</p><h3>标准模式为什么需要 tool_call_id？</h3><pre class="lesson-code"><code>messages.append(assistant_message)  # 含工具请求 id=call_example
+messages.append(ToolMessage(
+    content=&quot;检索结果……&quot;,
+    tool_call_id=&quot;call_example&quot;
+))</code></pre><p>同轮多个工具都可能返回文字，ID 能指明每个结果属于哪个请求。公共循环还检查工具自己返回的 ToolMessage 是否带正确ID；不能只凭消息顺序猜对应关系。</p><h3>循环什么时候停？异常谁负责？</h3><ul><li>没有工具调用且正文非空：返回最终响应。</li><li>没有工具调用且正文为空：报错，而不是假装完成。</li><li>达到5轮工具执行后：仍请求一次模型；允许直接总结，若再次要工具则报上限。</li><li>工具抛异常：记录失败消息并抛出异常，不继续把错误当成正常证据。</li><li>标准分支中同批前序工具失败：还会为未执行的后续工具补充失败/跳过结果，保持消息协议完整。</li></ul><p>回调只用于观察与记录，也可能失败；源码专门处理了该路径。因此工程代码比最小 while 伪代码长，增加的主要是边界处理。</p><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 2 条；工具调用记录 1 条；HTTP 请求 2 次（含向量请求）。总耗时 5.99 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>&gt;&gt;&gt; 用户提问：seekdb 支持哪些检索方式？混合检索是怎么实现的？
+&gt;&gt;&gt; 模型决定调用工具：query_knowledge_base
+&gt;&gt;&gt; 工具参数：{&#x27;query&#x27;: &#x27;seekdb 检索方式和混合检索实现原理&#x27;}
+
+&gt;&gt;&gt; 知识库检索结果：
+seekdb 支持关键词、语义向量和混合检索。
+
+seekdb 支持嵌入模式和服务器模式。
+
+&gt;&gt;&gt; 模型最终回答：
+seekdb 支持以下三种检索方式：
+
+- **关键词检索（Keyword Search）**：基于传统倒排索引，支持精确匹配、分词匹配与布尔逻辑（AND/OR/NOT），适用于结构化字段或强语义明确的查询。
+
+- **语义向量检索（Vector Search）**：将文本/内容编码为高维向量（如通过 Sentence-BERT 或其他嵌入模型），在向量空间中进行相似度检索（如余弦相似度），擅长处理语义近似、同义表达等场景。
+
+- **混合检索（Hybrid Search）**：将关键词检索与语义向量检索的结果进行融合排序。seekdb 默认采用 **RRF（Reciprocal Rank Fusion）** 算法对两路结果进行加权融合，兼顾相关性与可解释性；同时也支持自定义融合策略（如线性加权打分、BM25 + 向量相似度联合排序）。
+
+此外，seekdb 提供两种部署模式以适配不同场景：
+- **嵌入模式（Embedded Mode）**：轻量级单进程，适合开发测试或小型应用，内置向量引擎与全文索引。
+- **服务器模式（Server Mode）**：支持分布式部署、高并发请求与热更新，适用于生产环境。
+
+如需了解混合检索的具体配置方法（如 RRF 参数调整、权重设置或自定义融合器开发），我可进一步为您查询详细技术文档。</code></pre></details><h3>动手改一处，再验证</h3><p>把知识库中“RRF”的相关资料删掉后，模型是否仍补出实现细节？分别判断“工具成功执行”和“回答受证据支持”。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_4_tool_use_mock.py" target="_blank" rel="noopener">查看固定版本的 d1_4_tool_use_mock.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.chat_models import init_chat_model
+from langchain_core.tools import tool
+
+if __package__:
+    from .tool_call_loop import run_tool_call_loop
+else:
+    from tool_call_loop import run_tool_call_loop
+
+
+@tool
+def query_knowledge_base(query: str) -&gt; str:
+    &quot;&quot;&quot;从模拟知识库中检索产品功能、技术文档或操作指南。&quot;&quot;&quot;
+    fake_docs = {
+        &quot;检索方式&quot;: &quot;seekdb 支持关键词、语义向量和混合检索。&quot;,
+        &quot;部署模式&quot;: &quot;seekdb 支持嵌入模式和服务器模式。&quot;,
+        &quot;SDK&quot;: &quot;pyseekdb 是 seekdb 的 Python SDK，支持 Schemaless API。&quot;,
+    }
+    results = [
+        doc
+        for key, doc in fake_docs.items()
+        if key in query or any(word in query for word in key)
+    ]
+    return &quot;\n\n&quot;.join(results or fake_docs.values())
+
+
+def print_tool_result(tool_call, result):
+    print(f&quot;&gt;&gt;&gt; 模型决定调用工具：{tool_call[&#x27;name&#x27;]}&quot;)
+    print(f&quot;&gt;&gt;&gt; 工具参数：{tool_call[&#x27;args&#x27;]}\n&quot;)
+    print(f&quot;&gt;&gt;&gt; 知识库检索结果：\n{result}\n&quot;)
+
+
+def run_demo(llm):
+    print(&quot;&gt;&gt;&gt; 用户提问：seekdb 支持哪些检索方式？混合检索是怎么实现的？&quot;)
+    llm_with_tools = llm.bind_tools([query_knowledge_base])
+    response = run_tool_call_loop(
+        llm_with_tools,
+        [
+            (&quot;system&quot;, &quot;你是技术文档助手，产品问题请先查询知识库。&quot;),
+            (&quot;user&quot;, &quot;seekdb 支持哪些检索方式？混合检索是怎么实现的？&quot;),
+        ],
+        {query_knowledge_base.name: query_knowledge_base},
+        max_rounds=5,
+        on_tool_result=print_tool_result,
+        legacy_user_message_fallback=True,
+    )
+    print(f&quot;&gt;&gt;&gt; 模型最终回答：\n{response.content}&quot;)
+    return response
+
+
+def main(model_factory=init_chat_model) -&gt; int:
+    # Key 边界：模型初始化前失败，避免产生任何外部调用。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+    llm = model_factory(
+        &quot;deepseek-ai/DeepSeek-V3&quot;,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    run_demo(llm)
+    return 0
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main())</code></pre></details><div class="page-links"><a href="#d1-3">← 上一节</a><a href="#d1-5">下一节 →</a></div></div></article></section>
+<section class="panel" id="d1-5" aria-labelledby="d1-5-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-5</span><h2 id="d1-5-title">真实数据库工具：把字典替换为 seekdb</h2><p>工具接口保持简单，检索工作移到真实数据层。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 132" role="img" aria-labelledby="diagram-d1-5-svg-title"><title id="diagram-d1-5-svg-title">D1-5 的数据与执行路径</title><defs><marker id="diagram-d1-5-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">4 条课程文档</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">collection.add</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-5-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">百炼 Embedding</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">写入向量</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-5-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">query_texts</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">检索 Top-3</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-5-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">工具返回文档</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">模型组织回答</text></svg><figcaption>D1-5 的数据与执行路径</figcaption></figure><h3>入口负责准备资源，工具负责查询</h3><p><code>main</code> 先验证 Key，创建模型和数据库，再重建专用集合、写入四条文档、运行工具循环。集合删除是课程演示行为，因此本次传入独立 <code>db_path</code>，不指向已有业务数据库。</p><h3>实际检索代码</h3><pre class="lesson-code"><code>def build_search_tool(collection):
+    @tool
+    def search_seekdb(query: str) -&gt; str:
+        &quot;&quot;&quot;从 seekdb 知识库中检索产品功能和技术文档。&quot;&quot;&quot;
+        results = collection.query(query_texts=[query], n_results=3)
+        docs = results.get(&quot;documents&quot;, [[]])[0]
+        if not docs:
+            return &quot;未找到相关文档。&quot;
+        return &quot;\n\n&quot;.join(f&quot;[文档{i + 1}] {doc}&quot; for i, doc in enumerate(docs))
+
+    return search_seekdb</code></pre><ol><li>外层函数接收 collection，并返回内部工具。这个闭包让工具记住该集合。</li><li><code>query_texts=[query]</code> 以列表形式提交一条查询；本次由向量函数编码查询。</li><li><code>n_results=3</code> 请求前三条，不保证全部相关。</li><li><code>documents</code> 是按查询分组的二维列表，<code>[0]</code> 取第一条查询对应的文档列表。</li><li>添加“文档1”等局部编号并返回字符串，供下一轮模型阅读。</li></ol><h3>这里没有调用混合检索</h3><p>代码使用 <code>collection.query</code>，不是 D3 的 <code>hybrid_search</code>。知识库中“seekdb 支持混合检索”的句子是被检索的内容，不能据此说本实验执行了混合检索。</p><h3>本次为何额外使用 Embedding 模型？</h3><p>原版创建集合时没有指定向量函数；本次通过数据库工厂注入 <code>text-embedding-v4</code>，文档与查询统一使用 1024 维。四条课程文档进入真实本地 seekdb，检索不是 mock。Key 仅在进程内使用，不写进向量函数配置或报告。</p><h3>finally 为什么有两层？</h3><pre class="lesson-code"><code>def main(
+    model_factory=init_chat_model,
+    client_factory=create_seekdb_client,
+    db_path=None,
+) -&gt; int:
+    # Key 边界：缺少 Key 时不创建模型，也不触碰本地数据库。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        &quot;deepseek-ai/DeepSeek-V3&quot;,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    # 路径边界：默认锚定 D1 目录，测试和 CLI 可显式覆盖。
+    resolved_path = Path(db_path or DEFAULT_DB_PATH).expanduser().resolve()
+    require_destructive_seekdb_access(&quot;重建 D1 演示知识库&quot;)
+    db = client_factory(path=str(resolved_path))
+    created = False
+    try:
+        if db.has_collection(COLLECTION_NAME):
+            db.delete_collection(COLLECTION_NAME)
+        collection = db.create_collection(name=COLLECTION_NAME)
+        created = True
+        collection.add(
+            ids=[f&quot;doc_{i}&quot; for i in range(len(DOCS))],
+            documents=DOCS,
+        )
+        run_demo(llm, collection)
+        return 0
+    finally:
+        try:
+            # 资源清理边界：仅清理本次创建的集合，其他异常不得静默吞掉。
+            if created and db.has_collection(COLLECTION_NAME):
+                db.delete_collection(COLLECTION_NAME)
+                print(&quot;\n&gt;&gt;&gt; 知识库已清理&quot;)
+        finally:
+            _close_database(db)</code></pre><p>内层清理本次创建的集合；外层确保关闭数据库。即使模型请求失败，也需要释放资源。<code>created</code> 标志避免把未成功创建的集合当作本次资源清理。删除失败不会被悄悄当作成功。</p><h3>变量地图：一个集合的生命周期</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>db_path</td><td>Path</td><td>隔离数据库目录；决定本地数据落在哪个位置。</td></tr><tr><td>db</td><td>数据库客户端</td><td>负责创建、检查、删除集合和释放资源。</td></tr><tr><td>collection</td><td>集合对象</td><td>持有文档、向量及相关索引。</td></tr><tr><td>DOCS</td><td>list[str]，4条</td><td>课程提供的知识文本。</td></tr><tr><td>ids</td><td>list[str]</td><td>每条文档的标识，和 documents 按位置对应。</td></tr><tr><td>results["documents"]</td><td>list[list[str]]</td><td>批量查询外层列表；每个查询对应一个内层结果列表。</td></tr></tbody></table></div><h3>写入与查询共享同一个向量空间</h3><pre class="lesson-code"><code>写入：&quot;seekdb 使用 RRF 融合……&quot; → Embedding → [0.01, -0.02, ...] → 集合
+查询：&quot;混合检索怎么实现？&quot;        → 同一模型 → [0.03, -0.01, ...] → 相似度搜索</code></pre><p>向量数值仅为形状示意。本次每条向量有1024个数。模型和维度必须匹配；相同维度不保证不同模型的向量可以比较。Embedding 负责表示文本，聊天模型负责组织回答，二者不能混用。</p><h3>看懂二维 documents，避免取错层</h3><pre class="lesson-code"><code>results = {
+    &quot;documents&quot;: [[&quot;第一条文档&quot;, &quot;第二条文档&quot;, &quot;第三条文档&quot;]]
+}
+docs = results.get(&quot;documents&quot;, [[]])[0]
+# docs == [&quot;第一条文档&quot;, &quot;第二条文档&quot;, &quot;第三条文档&quot;]</code></pre><p>外层长度对应查询数量。本次 query_texts 只有一个元素，因此取第0组。<code>get(...,[[]])</code> 给“键缺失”兜底，但如果服务真的返回空外层列表，直接 [0] 仍会越界；这是阅读时要辨认的前置假设。</p><h3>为什么用闭包构建工具？</h3><pre class="lesson-code"><code>def build_search_tool(collection):
+    @tool
+    def search_seekdb(query: str) -&gt; str:
+        results = collection.query(query_texts=[query], n_results=3)
+        ...
+    return search_seekdb</code></pre><p>内部函数引用外层 collection。模型只需要生成 query，不需要知道数据库对象或路径；数据库连接由可信程序持有。换一个集合调用 build_search_tool，就能得到绑定到新集合的工具。</p><h3>finally 不是“最后成功才执行”</h3><p>无论 try 中正常返回还是抛异常，finally 都会执行。因此 main 里先 return 0，也要先完成清理才能真正返回。清理自身抛异常可能覆盖正常返回，不能仅看到模型答案就断言整个进程成功。</p><details><summary>为什么此实验每次重建并删除集合？</summary><p>为了让演示重复运行且不残留示例集合。这适合隔离练习，不是生产知识库更新策略。若把默认路径指向已有数据，删除同名集合可能丢数据；本次始终使用专用目录。</p></details><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 2 条；工具调用记录 1 条；HTTP 请求 4 次（含向量请求）。总耗时 13.493 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>&gt;&gt;&gt; 模型决定调用工具：search_seekdb
+&gt;&gt;&gt; 工具参数：{&#x27;query&#x27;: &#x27;检索方式 混合检索&#x27;}
+
+&gt;&gt;&gt; seekdb 检索结果：
+[文档1] seekdb 支持关键词检索、语义向量检索和混合检索。
+
+[文档2] seekdb 使用 RRF 融合关键词与向量检索结果。
+
+[文档3] seekdb 支持嵌入模式和服务器模式。
+
+&gt;&gt;&gt; 模型最终回答：
+seekdb 支持以下检索方式：
+
+- **关键词检索**：基于传统倒排索引的精确或模糊匹配，适用于结构化字段和全文关键词查询。  
+- **语义向量检索**：利用嵌入模型（如 BERT、text2vec 等）将文本映射为向量，在向量空间中进行近似最近邻（ANN）搜索，支持语义层面的相似性匹配。  
+- **混合检索（Hybrid Search）**：将关键词检索与语义向量检索的结果进行融合，兼顾准确性与语义相关性。
+
+混合检索在 seekdb 中通过 **RRF（Reciprocal Rank Fusion）算法** 实现：  
+- 分别执行关键词检索和向量检索，获取各自排序的 Top-K 结果（含文档 ID 和排名位置）；  
+- 对每个候选文档，按 RRF 公式计算融合得分：  
+  $$\text{RRF}(d) = \sum_{i=1}^{n} \frac{1}{k + \text{rank}_i(d)}$$  
+  其中 $k$ 是常数（默认为 60），$\text{rank}_i(d)$ 表示文档 $d$ 在第 $i$ 个检索结果中的排名（从 1 开始）；  
+- 最终按 RRF 得分降序重排，返回融合后的结果列表。
+
+该机制无需训练、参数少、鲁棒性强，且天然支持多路异构检索源的无偏融合。
+
+&gt;&gt;&gt; 知识库已清理</code></pre></details><h3>动手改一处，再验证</h3><p>把 n_results 改为1和3，比较实际证据是否覆盖“检索方式”和“RRF融合”两个子问题，不能只比较答案长短。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_5_tool_use_seekdb.py" target="_blank" rel="noopener">查看固定版本的 d1_5_tool_use_seekdb.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import argparse
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.chat_models import init_chat_model
+from langchain_core.tools import tool
+from seekdb_runtime import create_seekdb_client, require_destructive_seekdb_access
+
+if __package__:
+    from .tool_call_loop import run_tool_call_loop
+else:
+    from tool_call_loop import run_tool_call_loop
+
+
+D1_DIR = Path(__file__).resolve().parent
+DEFAULT_DB_PATH = D1_DIR / &quot;seekdb&quot;
+COLLECTION_NAME = &quot;d1_knowledge_base&quot;
+DOCS = [
+    &quot;seekdb 支持嵌入模式和服务器模式。&quot;,
+    &quot;seekdb 支持关键词检索、语义向量检索和混合检索。&quot;,
+    &quot;pyseekdb 是 seekdb 的 Python SDK，支持 Schemaless API。&quot;,
+    &quot;seekdb 使用 RRF 融合关键词与向量检索结果。&quot;,
+]
+
+
+def _close_database(database):
+    &quot;&quot;&quot;兼容 close() 和上下文管理协议两种 pyseekdb 客户端。&quot;&quot;&quot;
+    close = getattr(database, &quot;close&quot;, None)
+    if callable(close):
+        close()
+        return
+    exit_method = getattr(database, &quot;__exit__&quot;, None)
+    if callable(exit_method):
+        exit_method(None, None, None)
+
+
+def build_search_tool(collection):
+    @tool
+    def search_seekdb(query: str) -&gt; str:
+        &quot;&quot;&quot;从 seekdb 知识库中检索产品功能和技术文档。&quot;&quot;&quot;
+        results = collection.query(query_texts=[query], n_results=3)
+        docs = results.get(&quot;documents&quot;, [[]])[0]
+        if not docs:
+            return &quot;未找到相关文档。&quot;
+        return &quot;\n\n&quot;.join(f&quot;[文档{i + 1}] {doc}&quot; for i, doc in enumerate(docs))
+
+    return search_seekdb
+
+
+def print_tool_result(tool_call, result):
+    print(f&quot;&gt;&gt;&gt; 模型决定调用工具：{tool_call[&#x27;name&#x27;]}&quot;)
+    print(f&quot;&gt;&gt;&gt; 工具参数：{tool_call[&#x27;args&#x27;]}\n&quot;)
+    print(f&quot;&gt;&gt;&gt; seekdb 检索结果：\n{result}\n&quot;)
+
+
+def run_demo(llm, collection):
+    search_tool = build_search_tool(collection)
+    response = run_tool_call_loop(
+        llm.bind_tools([search_tool]),
+        [
+            (&quot;system&quot;, &quot;你是技术文档助手，seekdb 问题请先查询知识库。&quot;),
+            (&quot;user&quot;, &quot;seekdb 支持哪些检索方式？混合检索是怎么实现的？&quot;),
+        ],
+        {search_tool.name: search_tool},
+        max_rounds=5,
+        on_tool_result=print_tool_result,
+        legacy_user_message_fallback=True,
+    )
+    print(f&quot;&gt;&gt;&gt; 模型最终回答：\n{response.content}&quot;)
+    return response
+
+
+def main(
+    model_factory=init_chat_model,
+    client_factory=create_seekdb_client,
+    db_path=None,
+) -&gt; int:
+    # Key 边界：缺少 Key 时不创建模型，也不触碰本地数据库。
+    try:
+        Config.require_api_key(&quot;SILICONFLOW_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        &quot;deepseek-ai/DeepSeek-V3&quot;,
+        model_provider=&quot;openai&quot;,
+        **Config.get_siliconflow_config(),
+    )
+    # 路径边界：默认锚定 D1 目录，测试和 CLI 可显式覆盖。
+    resolved_path = Path(db_path or DEFAULT_DB_PATH).expanduser().resolve()
+    require_destructive_seekdb_access(&quot;重建 D1 演示知识库&quot;)
+    db = client_factory(path=str(resolved_path))
+    created = False
+    try:
+        if db.has_collection(COLLECTION_NAME):
+            db.delete_collection(COLLECTION_NAME)
+        collection = db.create_collection(name=COLLECTION_NAME)
+        created = True
+        collection.add(
+            ids=[f&quot;doc_{i}&quot; for i in range(len(DOCS))],
+            documents=DOCS,
+        )
+        run_demo(llm, collection)
+        return 0
+    finally:
+        try:
+            # 资源清理边界：仅清理本次创建的集合，其他异常不得静默吞掉。
+            if created and db.has_collection(COLLECTION_NAME):
+                db.delete_collection(COLLECTION_NAME)
+                print(&quot;\n&gt;&gt;&gt; 知识库已清理&quot;)
+        finally:
+            _close_database(db)
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&quot;--db-path&quot;, type=Path, default=DEFAULT_DB_PATH)
+    return parser.parse_args(argv)
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main(db_path=parse_args().db_path))</code></pre></details><div class="page-links"><a href="#d1-4">← 上一节</a><a href="#d1-6">下一节 →</a></div></div></article></section>
+<section class="panel" id="d1-6" aria-labelledby="d1-6-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 02 / D1-6</span><h2 id="d1-6-title">框架 Agent：循环还在，只是交给框架管理</h2><p>create_agent 组织模型节点与工具节点，stream 暴露执行事件。</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 190" role="img" aria-labelledby="diagram-d1-6-svg-title"><title id="diagram-d1-6-svg-title">D1-6 的数据与执行路径</title><defs><marker id="diagram-d1-6-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#687bc2"/></marker></defs><rect x="16.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="85.0" y="55" text-anchor="middle" font-size="15" fill="#263951">create_agent</text><text x="85.0" y="77" text-anchor="middle" font-size="15" fill="#263951">模型 + 工具</text><path d="M157.0,62 H207.66666666666666" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-6-arrow)"/><rect x="212.66666666666666" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="281.66666666666663" y="55" text-anchor="middle" font-size="15" fill="#263951">model 节点</text><text x="281.66666666666663" y="77" text-anchor="middle" font-size="15" fill="#263951">决定是否调用</text><path d="M353.66666666666663,62 H404.3333333333333" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-6-arrow)"/><rect x="409.3333333333333" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="478.3333333333333" y="55" text-anchor="middle" font-size="15" fill="#263951">tools 节点</text><text x="478.3333333333333" y="77" text-anchor="middle" font-size="15" fill="#263951">执行与回传</text><path d="M550.3333333333333,62 H600.9999999999999" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-6-arrow)"/><rect x="606.0" y="30" width="138" height="64" rx="7" fill="#f1f4fd" stroke="#b9c5e8"/><text x="675.0" y="55" text-anchor="middle" font-size="15" fill="#263951">model 节点</text><text x="675.0" y="77" text-anchor="middle" font-size="15" fill="#263951">继续或最终回答</text><path d="M675.0,98 V145 H281.66666666666663 V99" fill="none" stroke="#687bc2" stroke-width="2" marker-end="url(#diagram-d1-6-arrow)"/><text x="400" y="175" text-anchor="middle" font-size="14" fill="#59677d">工具结果加入 messages，再请求模型；无工具调用时结束</text></svg><figcaption>D1-6 的数据与执行路径</figcaption></figure><h3>从手写循环到框架节点</h3><p>D1-6 用 <code>create_agent(model, tools, system_prompt)</code> 构造执行图，不再直接调用 D1-4/5 的公共 while 循环。框架负责模型响应、工具执行与消息回传；业务代码仍需定义工具、数据源和停止边界。</p><h3>stream 在这一章不是逐字输出</h3><pre class="lesson-code"><code>def run_agent(agent, question: str) -&gt; str:
+    final_answer = &quot;&quot;
+    for chunk in agent.stream({&quot;messages&quot;: [(&quot;user&quot;, question)]}):
+        for node_name, node_output in chunk.items():
+            if not isinstance(node_output, dict):
+                continue
+            for msg in node_output.get(&quot;messages&quot;, []):
+                if getattr(msg, &quot;tool_calls&quot;, None):
+                    for call in msg.tool_calls:
+                        print(f&quot;   [行动] 调用工具 &#x27;{call[&#x27;name&#x27;]}&#x27;，参数：{call[&#x27;args&#x27;]}&quot;)
+                elif getattr(msg, &quot;type&quot;, None) == &quot;tool&quot;:
+                    print(f&quot;   [观察] 工具返回了 {msg.content.count(&#x27;[文档&#x27;)} 条相关文档&quot;)
+                elif getattr(msg, &quot;content&quot;, None) and node_name == &quot;model&quot;:
+                    print(msg.content, end=&quot;&quot;, flush=True)
+                    final_answer += msg.content
+    print()
+    return final_answer</code></pre><ol><li><code>agent.stream</code> 输入新的 user 消息。</li><li>代码遍历每次返回的节点更新，<code>node_name</code> 表示哪个节点产生了输出。</li><li>消息包含 tool_calls 时，打印“行动”；这是结构化工具请求，不是完整的内部思考。</li><li>消息类型为 tool 时，打印“观察”；课程按内容中的“[文档”计数，只是展示用。</li><li>model 节点返回有内容且无工具调用的消息时，累加最终答案。</li></ol><p>D1-3 的 stream 是模型文本块；此处默认消费 Agent 节点更新。虽然都使用 for 循环，事件粒度不同。</p><h3>三道问题是不是同一个长期会话？</h3><p>默认 <code>run_demo</code> 依次提出三道问题，每次 <code>run_agent</code> 都只传入新的 user 消息。原版没有配置 checkpointer 或会话标识，因此不能把顺序执行三题理解成自动持久记忆。</p><h3>启动与资源边界</h3><pre class="lesson-code"><code>def main(
+    model_factory=init_chat_model,
+    agent_factory=create_agent,
+    client_factory=create_seekdb_client,
+    db_path=None,
+    questions=None,
+) -&gt; int:
+    # Key 边界：缺少 Key 时不创建模型，也不触碰本地数据库。
+    try:
+        Config.require_api_key(&quot;DASHSCOPE_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_dashscope_config(),
+    )
+    # 用真实轻量调用探测用户已开通的模型；失败时不会创建数据库。
+    llm.invoke([(&quot;user&quot;, &quot;请只回复 ok&quot;)])
+
+    # 路径边界：显式路径避免 pyseekdb 使用 cwd，也避免模块级常驻资源。
+    resolved_path = Path(db_path or DEFAULT_DB_PATH).expanduser().resolve()
+    require_destructive_seekdb_access(&quot;重建 D1 Agent 知识库&quot;)
+    db = client_factory(path=str(resolved_path))
+    created = False
+    try:
+        if db.has_collection(COLLECTION_NAME):
+            db.delete_collection(COLLECTION_NAME)
+        collection = db.create_collection(name=COLLECTION_NAME)
+        created = True
+        collection.add(
+            ids=[f&quot;doc_{i}&quot; for i in range(len(DOCS))],
+            documents=DOCS,
+        )
+        search_tool = build_search_tool(collection)
+        agent = agent_factory(
+            model=llm,
+            tools=[search_tool],
+            system_prompt=SYSTEM_PROMPT,
+        )
+        run_demo(agent, questions)
+        return 0
+    finally:
+        try:
+            # 资源清理边界：无论 Agent 是否异常都删除集合，清理异常继续抛出。
+            if created and db.has_collection(COLLECTION_NAME):
+                db.delete_collection(COLLECTION_NAME)
+                print(&quot;\n&gt;&gt;&gt; 知识库已清理&quot;)
+        finally:
+            _close_database(db)</code></pre><p>正式建库前先调用一次“只回复 ok”检查联通性。随后创建五条知识的集合和搜索工具，再处理默认三题，最后删除本次集合并关闭数据库。本次还在注入的 agent_factory 中设置 <code>recursion_limit=16</code>，约束框架执行步数；它不是16次检索或16次HTTP调用的同义词。</p><h3>框架替你管理什么，仍需自己检查什么？</h3><p>框架管理节点衔接和工具结果协议，但不会自动保证知识完整、检索相关或回答正确。输出中出现“已检索”只能证明发生过工具调用；答案中的每条事实仍要对照返回证据。</p><h3>变量地图：框架返回的是节点事件</h3><div class="table-wrap"><table><thead><tr><th>变量 / 表达式</th><th>类型与形状</th><th>在程序中的作用</th></tr></thead><tbody><tr><td>agent</td><td>可运行的 Agent 图</td><td>包含模型节点、工具节点及其状态传递逻辑。</td></tr><tr><td>question</td><td>str</td><td>每次演示的单独问题。</td></tr><tr><td>chunk</td><td>dict</td><td>一次节点更新，键是节点名称。</td></tr><tr><td>node_output</td><td>通常为 dict</td><td>包含该节点产生的 messages 等状态更新。</td></tr><tr><td>msg</td><td>AIMessage 或 ToolMessage 等</td><td>由工具调用、类型、正文和节点共同决定展示方式。</td></tr><tr><td>final_answer</td><td>str</td><td>累加被识别为 model 最终内容的文本。</td></tr></tbody></table></div><h3>一次典型运行的三个事件</h3><pre class="lesson-code"><code>事件1：{&quot;model&quot;: {&quot;messages&quot;: [AIMessage(tool_calls=[...])]}}
+       → 打印 [行动]，还不是最终答案
+事件2：{&quot;tools&quot;: {&quot;messages&quot;: [ToolMessage(content=&quot;[文档1] ...&quot;)]}}
+       → 打印 [观察]，结果回到图状态
+事件3：{&quot;model&quot;: {&quot;messages&quot;: [AIMessage(content=&quot;根据资料……&quot;)]}}
+       → 累加 final_answer，模型不再请求工具时结束</code></pre><p>上面是简化结构，真实对象并不是可以直接照抄的 JSON。代码按 if/elif 顺序判断：有 tool_calls 的消息优先归为行动，即使它也有正文，也不会在该分支作为最终答案打印。</p><h3>stream 两种粒度再对照</h3><div class="table-wrap"><table><thead><tr><th>位置</th><th>迭代对象</th><th>代码读取什么</th></tr></thead><tbody><tr><td>D1-3 llm.stream</td><td>模型消息增量块</td><td>chunk.content</td></tr><tr><td>D1-6 agent.stream</td><td>图节点更新</td><td>node_output 的 messages</td></tr></tbody></table></div><p>因此 D1-6 终端看到成段答案并不说明流式失效，它监听的是不同层次的事件。若要逐 Token 显示，需要明确选择框架相应流模式并修改消费逻辑，本次没有替换这个模式。</p><h3>课程中哪些状态不会自动持久化？</h3><p>create_agent 构造的执行图可以在单次运行中维护消息状态，但原版没有配置持久化检查点。同一个 agent 对象被调用三次，不代表三题共享所有历史；每次传入新 user 消息时要看是否配置了会话状态保存，不能由变量名推断。</p><h3>如何检查 Agent 而不是只看最终一句话？</h3><ol><li>先核对模型是否调用了正确工具，参数是否保留问题中的关键对象。</li><li>检查工具实际返回哪些文档，而不是只看打印了“3条”。</li><li>逐条核对回答中的事实是否来自返回证据，哪些是额外推断。</li><li>检查运行是否因步数上限、异常或长度限制而停止。</li><li>最后确认数据库清理和进程退出状态。</li></ol><p>本次三题各调用一次检索工具并得到最终回答，完成资源清理；部分答案仍超出证据。两种现象应同时记录，不能相互抵消。</p><h3>本次运行：观察到了什么？</h3><p>执行状态：<strong>passed</strong>；模型响应记录 7 条；工具调用记录 3 条；HTTP 请求 11 次（含向量请求）。总耗时 30.391 秒。请求成功不等于回答事实全部正确。</p><details><summary>展开本次真实终端输出</summary><pre class="lesson-code"><code>============================================================
+问题 1：Agentic RAG 和传统 RAG 有什么区别？
+============================================================
+   [行动] 调用工具 &#x27;search_knowledge_base&#x27;，参数：{&#x27;query&#x27;: &#x27;Agentic RAG vs traditional RAG&#x27;}
+   [观察] 工具返回了 3 条相关文档
+Agentic RAG 与传统 RAG 的核心区别在于**自主性与动态决策能力**：
+
+- **传统 RAG**：采用固定流程——对用户查询直接进行向量检索 + LLM 生成。它**不判断是否需要检索**，也不评估检索结果质量，更不会根据中间结果决定是否重试或换策略。
+
+- **Agentic RAG**：将 RAG 封装为具备“代理（Agent）”行为的模块，能**主动决策**：
+  - ✅ 判断当前问题是否需要外部检索（例如已知常识性问题可跳过检索）；
+  - ✅ 评估首次检索结果的相关性与完整性；
+  - ✅ 在答案不充分时，**自主触发二次检索**（如改写查询、切换知识源、调整过滤条件等）；
+  - ✅ 可结合 Agent Memory（如情景记忆记录历史交互、语义记忆缓存高频实体关系），实现跨轮次上下文感知与策略优化。
+
+简言之：  
+🔹 传统 RAG 是「被动执行」的管道（Query → Retrieve → Generate）；  
+🔹 Agentic RAG 是「主动思考」的智能体（Query → *Decide* → (Retrieve → Evaluate → *Maybe Retry*) → Generate）。
+
+这使其更鲁棒、适应复杂问答场景，并为构建可演进、可调试的 RAG 系统提供了基础。
+
+&gt;&gt;&gt; 最终回答：
+Agentic RAG 与传统 RAG 的核心区别在于**自主性与动态决策能力**：
+
+- **传统 RAG**：采用固定流程——对用户查询直接进行向量检索 + LLM 生成。它**不判断是否需要检索**，也不评估检索结果质量，更不会根据中间结果决定是否重试或换策略。
+
+- **Agentic RAG**：将 RAG 封装为具备“代理（Agent）”行为的模块，能**主动决策**：
+  - ✅ 判断当前问题是否需要外部检索（例如已知常识性问题可跳过检索）；
+  - ✅ 评估首次检索结果的相关性与完整性；
+  - ✅ 在答案不充分时，**自主触发二次检索**（如改写查询、切换知识源、调整过滤条件等）；
+  - ✅ 可结合 Agent Memory（如情景记忆记录历史交互、语义记忆缓存高频实体关系），实现跨轮次上下文感知与策略优化。
+
+简言之：  
+🔹 传统 RAG 是「被动执行」的管道（Query → Retrieve → Generate）；  
+🔹 Agentic RAG 是「主动思考」的智能体（Query → *Decide* → (Retrieve → Evaluate → *Maybe Retry*) → Generate）。
+
+这使其更鲁棒、适应复杂问答场景，并为构建可演进、可调试的 RAG 系统提供了基础。
+
+============================================================
+问题 2：Agent 的记忆系统是怎么分类的？有什么工具可以用？
+============================================================
+   [行动] 调用工具 &#x27;search_knowledge_base&#x27;，参数：{&#x27;query&#x27;: &#x27;Agent Memory 分类和工具&#x27;}
+   [观察] 工具返回了 3 条相关文档
+Agent 的记忆系统通常按认知科学启发的三类进行分类：
+
+1. **语义记忆（Semantic Memory）**  
+   存储通用知识、事实、概念和规则（如“巴黎是法国首都”），不依赖具体时间或上下文，支持推理与泛化。
+
+2. **情景记忆（Episodic Memory）**  
+   记录 Agent 在特定时间、地点经历的具体交互事件（如“用户在 2024-05-20 提问过天气预报”），用于上下文回溯与个性化响应。
+
+3. **程序记忆（Procedural Memory）**  
+   存储可复用的行为模式、技能或工作流（如“调用天气 API 需先获取城市名再构造请求”），常以工具调用链、策略模板或动作脚本形式体现。
+
+✅ **可用工具示例：**  
+- **PowerMem**：基于 seekdb 构建的轻量级、可插拔 Agent 记忆系统，原生支持上述三类记忆的结构化存储与检索；  
+- **seekdb**：专为 Agent 设计的向量+结构化混合数据库，支持语义检索 + 元数据过滤 + 增量更新，是 PowerMem 的底层引擎；  
+- **Agentic RAG 组件**（如自适应检索器）：可作为情景/语义记忆的增强模块，支持“是否检索”“何时重检”的自主决策，提升记忆调用的准确性和时效性。
+
+如需进一步了解某类记忆的设计实践或 PowerMem 集成方式，可继续提问。
+
+&gt;&gt;&gt; 最终回答：
+Agent 的记忆系统通常按认知科学启发的三类进行分类：
+
+1. **语义记忆（Semantic Memory）**  
+   存储通用知识、事实、概念和规则（如“巴黎是法国首都”），不依赖具体时间或上下文，支持推理与泛化。
+
+2. **情景记忆（Episodic Memory）**  
+   记录 Agent 在特定时间、地点经历的具体交互事件（如“用户在 2024-05-20 提问过天气预报”），用于上下文回溯与个性化响应。
+
+3. **程序记忆（Procedural Memory）**  
+   存储可复用的行为模式、技能或工作流（如“调用天气 API 需先获取城市名再构造请求”），常以工具调用链、策略模板或动作脚本形式体现。
+
+✅ **可用工具示例：**  
+- **PowerMem**：基于 seekdb 构建的轻量级、可插拔 Agent 记忆系统，原生支持上述三类记忆的结构化存储与检索；  
+- **seekdb**：专为 Agent 设计的向量+结构化混合数据库，支持语义检索 + 元数据过滤 + 增量更新，是 PowerMem 的底层引擎；  
+- **Agentic RAG 组件**（如自适应检索器）：可作为情景/语义记忆的增强模块，支持“是否检索”“何时重检”的自主决策，提升记忆调用的准确性和时效性。
+
+如需进一步了解某类记忆的设计实践或 PowerMem 集成方式，可继续提问。
+
+============================================================
+问题 3：seekdb 支持哪些检索方式？混合检索的原理是什么？
+============================================================
+   [行动] 调用工具 &#x27;search_knowledge_base&#x27;，参数：{&#x27;query&#x27;: &#x27;seekdb 检索方式 混合检索原理&#x27;}
+   [观察] 工具返回了 3 条相关文档
+SeekDB 支持以下三种检索方式：
+
+1. **关键词检索（Keyword Search）**：基于传统倒排索引，支持分词、布尔逻辑（AND/OR/NOT）、通配符、模糊匹配等，召回精准匹配的结构化或半结构化文本片段。
+
+2. **语义向量检索（Vector Search）**：将查询和文档嵌入为高维向量，通过近似最近邻（ANN）算法（如 HNSW 或 FAISS）计算余弦相似度，实现语义层面的相关性匹配，对同义、 paraphrase 和上下文理解更鲁棒。
+
+3. **混合检索（Hybrid Search）**：  
+   - **原理**：采用 **RRF（Reciprocal Rank Fusion）** 算法融合关键词与向量检索的排序结果。  
+     - 对每个检索通道分别获取 Top-K 结果（如 Top-50），记录各条目在各自排序中的位置（rank，从 1 开始计数）；  
+     - 计算 RRF 分数：`score = 1 / (k + rank)`，其中 `k` 是常数（默认通常为 60）；  
+     - 合并所有结果，按 RRF 分数加总后重排序，兼顾关键词的精确性与向量的语义泛化能力。  
+   - 优势：无需训练、零样本融合、鲁棒性强，能有效缓解单一检索的偏差（如向量漏检关键词强匹配项，或关键词无法理解隐含语义）。
+
+注：SeekDB 的混合检索默认启用 RRF，也支持自定义融合策略（如加权线性融合），但 RRF 是其推荐且开箱即用的核心机制。
+
+&gt;&gt;&gt; 最终回答：
+SeekDB 支持以下三种检索方式：
+
+1. **关键词检索（Keyword Search）**：基于传统倒排索引，支持分词、布尔逻辑（AND/OR/NOT）、通配符、模糊匹配等，召回精准匹配的结构化或半结构化文本片段。
+
+2. **语义向量检索（Vector Search）**：将查询和文档嵌入为高维向量，通过近似最近邻（ANN）算法（如 HNSW 或 FAISS）计算余弦相似度，实现语义层面的相关性匹配，对同义、 paraphrase 和上下文理解更鲁棒。
+
+3. **混合检索（Hybrid Search）**：  
+   - **原理**：采用 **RRF（Reciprocal Rank Fusion）** 算法融合关键词与向量检索的排序结果。  
+     - 对每个检索通道分别获取 Top-K 结果（如 Top-50），记录各条目在各自排序中的位置（rank，从 1 开始计数）；  
+     - 计算 RRF 分数：`score = 1 / (k + rank)`，其中 `k` 是常数（默认通常为 60）；  
+     - 合并所有结果，按 RRF 分数加总后重排序，兼顾关键词的精确性与向量的语义泛化能力。  
+   - 优势：无需训练、零样本融合、鲁棒性强，能有效缓解单一检索的偏差（如向量漏检关键词强匹配项，或关键词无法理解隐含语义）。
+
+注：SeekDB 的混合检索默认启用 RRF，也支持自定义融合策略（如加权线性融合），但 RRF 是其推荐且开箱即用的核心机制。
+
+&gt;&gt;&gt; 知识库已清理</code></pre></details><h3>动手改一处，再验证</h3><p>给 Agent 提一个资料中没有答案的问题，观察它是否正确承认不足；需要单独授权调用时再运行，不把“没有异常”当作回答正确。</p><p class="note">这是建议练习，未计入本次已完成实验。再次调用真实模型会消耗额度。</p><h3>对照完整源码</h3><p><a href="https://github.com/datawhalechina/easy-data-x-ai/blob/e5c4d0761acd747cc5272f5e6bc3634494f48b6d/code/D1/d1_6_agent.py" target="_blank" rel="noopener">查看固定版本的 d1_6_agent.py</a>。下面是本次执行所依据的原版源码，百炼适配器另外提供。</p><details><summary>展开完整原版源码</summary><pre class="lesson-code"><code>import argparse
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from config import Config
+from langchain.agents import create_agent
+from langchain.chat_models import init_chat_model
+from langchain_core.tools import tool
+from seekdb_runtime import create_seekdb_client, require_destructive_seekdb_access
+
+
+D1_DIR = Path(__file__).resolve().parent
+DEFAULT_DB_PATH = D1_DIR / &quot;seekdb&quot;
+COLLECTION_NAME = &quot;d1_agent_kb&quot;
+MODEL_NAME = &quot;qwen-plus&quot;
+SYSTEM_PROMPT = (
+    &quot;你是 AI 技术文档助手。回答 seekdb、RAG、Agent Memory、MCP 问题前，&quot;
+    &quot;请先查询知识库；回答使用中文。&quot;
+)
+DOCS = [
+    &quot;seekdb 支持关键词、语义向量和混合检索，混合检索使用 RRF 融合。&quot;,
+    &quot;Agentic RAG 会主动判断是否检索以及是否需要再次检索。&quot;,
+    &quot;Agent Memory 可分为语义记忆、情景记忆和程序记忆。&quot;,
+    &quot;PowerMem 是基于 seekdb 构建的 Agent 记忆系统。&quot;,
+    &quot;MCP 是连接 AI 工具与外部服务的标准化协议。&quot;,
+]
+DEFAULT_QUESTIONS = [
+    &quot;Agentic RAG 和传统 RAG 有什么区别？&quot;,
+    &quot;Agent 的记忆系统是怎么分类的？有什么工具可以用？&quot;,
+    &quot;seekdb 支持哪些检索方式？混合检索的原理是什么？&quot;,
+]
+
+
+def _close_database(database):
+    &quot;&quot;&quot;兼容 close() 和上下文管理协议两种 pyseekdb 客户端。&quot;&quot;&quot;
+    close = getattr(database, &quot;close&quot;, None)
+    if callable(close):
+        close()
+        return
+    exit_method = getattr(database, &quot;__exit__&quot;, None)
+    if callable(exit_method):
+        exit_method(None, None, None)
+
+
+def build_search_tool(collection):
+    @tool
+    def search_knowledge_base(query: str) -&gt; str:
+        &quot;&quot;&quot;检索 seekdb、RAG、Agent Memory 和 MCP 相关知识。&quot;&quot;&quot;
+        results = collection.query(query_texts=[query], n_results=3)
+        docs = results.get(&quot;documents&quot;, [[]])[0]
+        if not docs:
+            return &quot;未找到相关文档。&quot;
+        return &quot;\n\n&quot;.join(f&quot;[文档{i + 1}] {doc}&quot; for i, doc in enumerate(docs))
+
+    return search_knowledge_base
+
+
+def run_agent(agent, question: str) -&gt; str:
+    final_answer = &quot;&quot;
+    for chunk in agent.stream({&quot;messages&quot;: [(&quot;user&quot;, question)]}):
+        for node_name, node_output in chunk.items():
+            if not isinstance(node_output, dict):
+                continue
+            for msg in node_output.get(&quot;messages&quot;, []):
+                if getattr(msg, &quot;tool_calls&quot;, None):
+                    for call in msg.tool_calls:
+                        print(f&quot;   [行动] 调用工具 &#x27;{call[&#x27;name&#x27;]}&#x27;，参数：{call[&#x27;args&#x27;]}&quot;)
+                elif getattr(msg, &quot;type&quot;, None) == &quot;tool&quot;:
+                    print(f&quot;   [观察] 工具返回了 {msg.content.count(&#x27;[文档&#x27;)} 条相关文档&quot;)
+                elif getattr(msg, &quot;content&quot;, None) and node_name == &quot;model&quot;:
+                    print(msg.content, end=&quot;&quot;, flush=True)
+                    final_answer += msg.content
+    print()
+    return final_answer
+
+
+def run_demo(agent, questions=None):
+    answers = []
+    for index, question in enumerate(questions or DEFAULT_QUESTIONS, 1):
+        print(f&quot;\n{&#x27;=&#x27; * 60}\n问题 {index}：{question}\n{&#x27;=&#x27; * 60}&quot;)
+        answer = run_agent(agent, question)
+        print(f&quot;\n&gt;&gt;&gt; 最终回答：\n{answer}&quot;)
+        answers.append(answer)
+    return answers
+
+
+def main(
+    model_factory=init_chat_model,
+    agent_factory=create_agent,
+    client_factory=create_seekdb_client,
+    db_path=None,
+    questions=None,
+) -&gt; int:
+    # Key 边界：缺少 Key 时不创建模型，也不触碰本地数据库。
+    try:
+        Config.require_api_key(&quot;DASHSCOPE_API_KEY&quot;)
+    except RuntimeError as exc:
+        print(f&quot;❌ {exc}&quot;)
+        return 1
+
+    llm = model_factory(
+        MODEL_NAME,
+        model_provider=&quot;openai&quot;,
+        **Config.get_dashscope_config(),
+    )
+    # 用真实轻量调用探测用户已开通的模型；失败时不会创建数据库。
+    llm.invoke([(&quot;user&quot;, &quot;请只回复 ok&quot;)])
+
+    # 路径边界：显式路径避免 pyseekdb 使用 cwd，也避免模块级常驻资源。
+    resolved_path = Path(db_path or DEFAULT_DB_PATH).expanduser().resolve()
+    require_destructive_seekdb_access(&quot;重建 D1 Agent 知识库&quot;)
+    db = client_factory(path=str(resolved_path))
+    created = False
+    try:
+        if db.has_collection(COLLECTION_NAME):
+            db.delete_collection(COLLECTION_NAME)
+        collection = db.create_collection(name=COLLECTION_NAME)
+        created = True
+        collection.add(
+            ids=[f&quot;doc_{i}&quot; for i in range(len(DOCS))],
+            documents=DOCS,
+        )
+        search_tool = build_search_tool(collection)
+        agent = agent_factory(
+            model=llm,
+            tools=[search_tool],
+            system_prompt=SYSTEM_PROMPT,
+        )
+        run_demo(agent, questions)
+        return 0
+    finally:
+        try:
+            # 资源清理边界：无论 Agent 是否异常都删除集合，清理异常继续抛出。
+            if created and db.has_collection(COLLECTION_NAME):
+                db.delete_collection(COLLECTION_NAME)
+                print(&quot;\n&gt;&gt;&gt; 知识库已清理&quot;)
+        finally:
+            _close_database(db)
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&quot;--db-path&quot;, type=Path, default=DEFAULT_DB_PATH)
+    return parser.parse_args(argv)
+
+
+if __name__ == &quot;__main__&quot;:
+    raise SystemExit(main(db_path=parse_args().db_path))</code></pre></details><div class="page-links"><a href="#d1-5">← 上一节</a><a href="#task2">返回实验总览</a></div></div></article></section><section id="f0" class="panel" aria-labelledby="f0-title"><article class="chapter"><header class="chapter-head"><div><span class="eyebrow">F0 · 课前闲聊</span><h2 id="f0-title">Agent 的经验，从哪里来？</h2><p>先弄清经验怎样留下来，再追踪它怎样影响下一次任务。</p></div><span class="chapter-no" aria-hidden="true">01</span></header><div class="body">
 <div class="callout"><strong>这一章的核心</strong><p>课程以 OpenClaw 为例：把偏好、规则和经验保存下来，在下一次任务中重新读取，Agent 才有机会持续利用过去的经验。</p></div>
 <h3>先分清两件事</h3><div class="comparison"><div><span>模型本身的学习</span>训练过程改变模型参数</div><div><span>本章讨论的经验积累</span>保存外部数据，再放入上下文</div></div><p class="note">把笔记写进文件，不意味着模型权重发生变化。文件里的信息需要被正确读取和使用，才会影响后续回答。</p>
 <div class="section"><h3>追踪一条周报规则的完整旅程</h3><p>假设用户提出：“周报先写结论，再列风险，不要超过三段。”下面是一个经验复用的教学示例，不表示所有助手都会自动执行这些步骤。</p><ol><li><strong>确认与保存：</strong>把明确的偏好写入可持久保存的记录，并标明只适用于周报，避免误用到所有文章。</li><li><strong>按任务召回：</strong>下次收到“写周报”的请求时，找到这条规则，而不是加载全部历史。</li><li><strong>放入当前上下文：</strong>将规则与本周工作事实一起交给模型。存储中的信息只有被提供给这次调用，才有机会发挥作用。</li><li><strong>执行并核对：</strong>检查输出是否先给结论、是否列出风险、是否满足篇幅要求。读到规则也不保证一定遵守。</li><li><strong>纠错与更新：</strong>如果用户改为“先列风险”，更新适用规则，处理旧版本；不要让两条冲突要求长期并存。</li></ol><div class="example"><span class="label">失败时，沿链路找原因</span><p>没有保存 → 下次没有来源；保存但没召回 → 来源存在但这次看不到；召回了旧规则 → 数据过期；提供了正确规则仍没执行 → 继续检查理解和执行。</p></div><p>因此，“越用越好用”依赖整条链路。它不意味着每次对话都在训练模型，也不意味着记录越多越好。</p></div>
@@ -130,8 +1495,8 @@ function counts(){let answered=0,right=0;for(const [id,items] of Object.entries(
 function updateProgress(){const c=counts();document.querySelector('#progress-text').textContent=`${c.read} / 3 章`;document.querySelector('#progress-bar').style.width=`${c.read/3*100}%`;document.querySelector('#quiz-progress').textContent=`自测 ${c.answered} / 9 · 当前正确 ${c.right} 题`;document.querySelector('#journal-progress').textContent=`阅读进度：${c.read} / 3`;document.querySelector('#journal-score').textContent=`自测已回答 ${c.answered} / 9 题，当前答案正确 ${c.right} 题。可以修改答案、反复练习。`;renderDraft();}
 function draftText(){const c=counts();const lines=['# Task 1：环境准备与公共基础导读','','## 环境准备','- 已完成 Shell、Python、Git 环境自检。','- 已完成百炼 Qwen 与 DeepSeek 官网 API 最小联通验证。','','## 公共基础学习'];for(const [id,chapter] of Object.entries(chapters)){const entry=state.notes[id]||{};lines.push(`\n### ${chapter.title}`,`阅读状态：${state.read[id]===true?'已自行确认阅读导读':'尚未确认完成'}`,`我的理解与例子：\n${entry.note?.trim()||'（待自己填写）'}`,`我的疑问：\n${entry.question?.trim()||'（待自己填写）'}`);}lines.push('\n## 自测',`已回答 ${c.answered}/9 题，当前答案正确 ${c.right} 题。此为本地练习，可修改答案，不是官方考试成绩。`,'\n## 下一步',state.next.trim()||'（待自己填写）','\n---','依据：Easy Data x AI 仓库公共基础 F0/F1/F2。个人心得由本人填写，提交前核对活动格式与实际学习进度。');return lines.join('\n');}
 function renderDraft(){document.querySelector('#draft').value=draftText();}
-function route(){const [requested,anchor]=location.hash.slice(1).split('/');const id=['home','task1','task2','template','f0','f1','f2','journal'].includes(requested)?requested:'home';document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('[data-page]').forEach(a=>{a.classList.toggle('active',a.dataset.page===id);if(a.dataset.page===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(id==='journal')renderDraft();
-const labels={task2:'Task 2 · RAG 专题预习',home:'总览',task1:'Task 1 · 打卡笔记',template:'Task 笔记模板',f0:'Task 1 / F0',f1:'Task 1 / F1',f2:'Task 1 / F2',journal:'Task 1 / 私人草稿'};
+function route(){const [requested,anchor]=location.hash.slice(1).split('/');const id=['home','task1','task2','rag','d1-1','d1-2','d1-3','d1-4','d1-5','d1-6','template','f0','f1','f2','journal'].includes(requested)?requested:'home';document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('[data-page]').forEach(a=>{a.classList.toggle('active',a.dataset.page===id);if(a.dataset.page===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(id==='journal')renderDraft();
+const labels={task2:'Task 2 · D1 代码实战',rag:'拓展 · D3 RAG 实验','d1-1':'Task 2 / D1-1','d1-2':'Task 2 / D1-2','d1-3':'Task 2 / D1-3','d1-4':'Task 2 / D1-4','d1-5':'Task 2 / D1-5','d1-6':'Task 2 / D1-6',home:'总览',task1:'Task 1 · 打卡笔记',template:'Task 笔记模板',f0:'Task 1 / F0',f1:'Task 1 / F1',f2:'Task 1 / F2',journal:'Task 1 / 私人草稿'};
 document.querySelector('#breadcrumb').textContent=labels[id];document.title=labels[id]+' · Easy Data × AI 学习笔记';
 const toc=document.querySelector('#page-toc');toc.replaceChildren();document.querySelectorAll('#'+id+' h3').forEach((h,n)=>{if(!h.id)h.id=id+'-section-'+n;const a=document.createElement('a');a.textContent=h.textContent;a.href='#'+id+'/'+h.id;toc.append(a);});
 document.querySelector('.rail').classList.remove('open');syncSidebar();const selected=document.querySelector('.nav [aria-current="page"]');const group=selected?.closest('.task-group');if(group)group.open=true;
