@@ -19,9 +19,9 @@
 
 .code-diagram{margin:26px 0;overflow-x:auto;border:1px solid #dce3f0;border-radius:8px;padding:14px;background:#fbfcff}.code-diagram svg{display:block;width:100%;min-width:590px;height:auto}.code-diagram figcaption{font-size:13px;color:#657188;text-align:center;padding-top:10px}.lesson-code{tab-size:4;font-size:14px;line-height:1.85;max-height:650px;overflow:auto}.lesson-code code{background:none;padding:0;white-space:pre;overflow-wrap:normal}details>summary{line-height:1.7}.prose ol li{margin-bottom:14px}
 </style></head><body><a class="skip" href="#content">跳到学习内容</a>
-<header class="book-header"><div class="header-start"><button class="mobile-menu" aria-expanded="true" aria-controls="book-nav" aria-label="收起侧栏" title="收起侧栏">☰</button><a href="#home"><strong><span class="book-mark">笔记</span>Easy Data × AI</strong></a></div><a href="https://github.com/LIUgiant/ai-study-notes" target="_blank" rel="noopener">GitHub ↗</a></header><aside class="rail" id="book-nav"><div class="brand">EASY DATA <span>× AI</span></div><p class="rail-sub">学习、实践与问题记录</p><nav class="nav" aria-label="任务目录"><a href="#home" data-page="home">学习笔记总览</a><details class="task-group" data-group="task1" open><summary>Task 1 · 环境与基础</summary><div class="task-children"><a href="#task1" data-page="task1">打卡笔记</a><a class="sub" href="#f0" data-page="f0"><b>F0</b>经验从哪里来</a><a class="sub" href="#f1" data-page="f1"><b>F1</b>模型的边界</a><a class="sub" href="#f2" data-page="f2"><b>F2</b>Agent 能力地图</a><a class="sub" href="#journal" data-page="journal">练习与私人草稿</a></div></details><details class="task-group" data-group="task2"><summary>Task 2 · D1 代码实战</summary><div class="task-children"><a href="#task2" data-page="task2">实验总览与运行方式</a><a href="#d1-1" data-page="d1-1">D1-1 · 单次调用</a><a href="#d1-2" data-page="d1-2">D1-2 · 多轮消息</a><a href="#d1-3" data-page="d1-3">D1-3 · 流式输出</a><a href="#d1-4" data-page="d1-4">D1-4 · 模拟工具</a><a href="#d1-5" data-page="d1-5">D1-5 · seekdb 工具</a><a href="#d1-6" data-page="d1-6">D1-6 · 框架 Agent</a></div></details><details class="task-group" data-group="task3"><summary>Task 3 · D2 数据层</summary><div class="task-children"><a href="#task3" data-page="task3">实验总览与模型对照</a><a href="#d2-1" data-page="d2-1">D2-1 · 文档入库</a><a href="#d2-2" data-page="d2-2">D2-2 · 向量检索</a><a href="#d2-3" data-page="d2-3">D2-3 · 混合搜索</a><a href="#d2-4" data-page="d2-4">D2-4 · 对比实验</a></div></details><details class="task-group" data-group="extra"><summary>拓展阅读</summary><div class="task-children"><a href="#rag" data-page="rag">D3 · RAG 实验笔记</a></div></details><div class="nav-label">后续学习</div><a href="#template" data-page="template">Task 笔记模板</a><p class="future-note">后续 Task 完成后，逐章加入这里。</p></nav><div class="rail-bottom"><strong id="progress-text">0 / 3 章</strong>由你确认自己的阅读进度<div class="meter"><span id="progress-bar"></span></div><span id="quiz-progress">自测尚未开始</span></div></aside>
+<header class="book-header"><div class="header-start"><button class="mobile-menu" aria-expanded="true" aria-controls="book-nav" aria-label="收起侧栏" title="收起侧栏">☰</button><a href="#home"><strong><span class="book-mark">笔记</span>Easy Data × AI</strong></a></div><a href="https://github.com/LIUgiant/ai-study-notes" target="_blank" rel="noopener">GitHub ↗</a></header><aside class="rail" id="book-nav"><div class="brand">EASY DATA <span>× AI</span></div><p class="rail-sub">学习、实践与问题记录</p><nav class="nav" aria-label="任务目录"><a href="#home" data-page="home">学习笔记总览</a><details class="task-group" data-group="task1" open><summary>Task 1 · 环境与基础</summary><div class="task-children"><a href="#task1" data-page="task1">打卡笔记</a><a class="sub" href="#f0" data-page="f0"><b>F0</b>经验从哪里来</a><a class="sub" href="#f1" data-page="f1"><b>F1</b>模型的边界</a><a class="sub" href="#f2" data-page="f2"><b>F2</b>Agent 能力地图</a><a class="sub" href="#journal" data-page="journal">练习与私人草稿</a></div></details><details class="task-group" data-group="task2"><summary>Task 2 · D1 代码实战</summary><div class="task-children"><a href="#task2" data-page="task2">实验总览与运行方式</a><a href="#d1-1" data-page="d1-1">D1-1 · 单次调用</a><a href="#d1-2" data-page="d1-2">D1-2 · 多轮消息</a><a href="#d1-3" data-page="d1-3">D1-3 · 流式输出</a><a href="#d1-4" data-page="d1-4">D1-4 · 模拟工具</a><a href="#d1-5" data-page="d1-5">D1-5 · seekdb 工具</a><a href="#d1-6" data-page="d1-6">D1-6 · 框架 Agent</a></div></details><details class="task-group" data-group="task3"><summary>Task 3 · D2 数据层</summary><div class="task-children"><a href="#task3" data-page="task3">实验总览与模型对照</a><a href="#d2-1" data-page="d2-1">D2-1 · 文档入库</a><a href="#d2-2" data-page="d2-2">D2-2 · 向量检索</a><a href="#d2-3" data-page="d2-3">D2-3 · 混合搜索</a><a href="#d2-4" data-page="d2-4">D2-4 · 对比实验</a></div></details><details class="task-group" data-group="task4"><summary>Task 4 · 分块与库内AI</summary><div class="task-children"><a href="#task4" data-page="task4">实验总览</a><a href="#t4-chunk" data-page="t4-chunk">D2-5 · 分块代码</a><a href="#t4-sql" data-page="t4-sql">AI Functions · SQL代码</a></div></details><details class="task-group" data-group="extra"><summary>拓展阅读</summary><div class="task-children"><a href="#rag" data-page="rag">D3 · RAG 实验笔记</a></div></details><div class="nav-label">后续学习</div><a href="#template" data-page="template">Task 笔记模板</a><p class="future-note">后续 Task 完成后，逐章加入这里。</p></nav><div class="rail-bottom"><strong id="progress-text">0 / 3 章</strong>由你确认自己的阅读进度<div class="meter"><span id="progress-bar"></span></div><span id="quiz-progress">自测尚未开始</span></div></aside>
 <div class="wrap"><header><div class="topline"><span class="tag">学习笔记 / <span id="breadcrumb">总览</span></span><span id="save-state" role="status">心得仅保存在当前浏览器</span></div><div class="intro"><h1>从数据，读懂 AI</h1><p>先读一个概念，再想一个例子，最后用自己的话讲出来。</p></div></header><main id="content" tabindex="-1">
-<section class="panel" id="home" aria-labelledby="home-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">LEARNING NOTES</span><h2 id="home-title">Easy Data × AI 学习笔记</h2><p>从环境准备开始，记录每一次实践、概念理解和待解的问题。</p></div></div><div class="body prose"><div class="chapter-meta">Datawhale 组队学习 · 持续更新</div><h3>任务目录</h3><a class="task-row" href="#task1"><div><strong>01 &nbsp; 环境准备与公共基础</strong><p>Shell / Python / 模型 API / Git<br>F0 经验积累 · F1 模型边界 · F2 Agent 能力</p></div><em>阅读笔记 →</em></a><a class="task-row" href="#task2"><div><strong>02 &nbsp; 模型 API 与 Agent 代码实战</strong><p>D1-1 至 D1-6 · 逐段代码讲解 · SVG 流程图 · 真实运行输出</p></div><em>阅读实验笔记 →</em></a><p class="note">已整理 Task 1、Task 2（D1-1 至 D1-6）与 Task 3（D2-1 至 D2-4）。D3 RAG 实验保留为拓展阅读。</p><a class="task-row" href="#task3"><div><strong>03 &nbsp; RAG 数据层</strong><p>D2-1 至 D2-4 · 向量与混合检索 · 百炼Embedding对照</p></div><em>阅读新笔记 →</em></a><h3>笔记怎么读</h3><p>每个 Task 先用一篇打卡笔记串起学习目标、核心概念、实践记录和后续问题。需要展开时，再进入对应的知识点导读。</p><p>Task 1 的 F0 / F1 / F2 保留了例子和自测。练习答案、阅读进度和私人草稿只保存在当前浏览器；公开打卡笔记则可以直接分享给别人。</p><div class="page-links"><a href="#task1">开始阅读 Task 1 →</a><a href="#template">查看后续笔记模板</a></div></div></article></section>
+<section class="panel" id="home" aria-labelledby="home-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">LEARNING NOTES</span><h2 id="home-title">Easy Data × AI 学习笔记</h2><p>从环境准备开始，记录每一次实践、概念理解和待解的问题。</p></div></div><div class="body prose"><div class="chapter-meta">Datawhale 组队学习 · 持续更新</div><h3>任务目录</h3><a class="task-row" href="#task1"><div><strong>01 &nbsp; 环境准备与公共基础</strong><p>Shell / Python / 模型 API / Git<br>F0 经验积累 · F1 模型边界 · F2 Agent 能力</p></div><em>阅读笔记 →</em></a><a class="task-row" href="#task2"><div><strong>02 &nbsp; 模型 API 与 Agent 代码实战</strong><p>D1-1 至 D1-6 · 逐段代码讲解 · SVG 流程图 · 真实运行输出</p></div><em>阅读实验笔记 →</em></a><p class="note">已整理 Task 1、Task 2（D1-1 至 D1-6）与 Task 3（D2-1 至 D2-4）。D3 RAG 实验保留为拓展阅读。</p><a class="task-row" href="#task3"><div><strong>03 &nbsp; RAG 数据层</strong><p>D2-1 至 D2-4 · 向量与混合检索 · 百炼Embedding对照</p></div><em>阅读新笔记 →</em></a><a class="task-row" href="#task4"><div><strong>04 &nbsp; 分块与 AI Functions</strong><p>D2-5 · 百炼批量适配 · SQL 调用 AI · 失败对照</p></div><em>阅读新笔记 →</em></a><h3>笔记怎么读</h3><p>每个 Task 先用一篇打卡笔记串起学习目标、核心概念、实践记录和后续问题。需要展开时，再进入对应的知识点导读。</p><p>Task 1 的 F0 / F1 / F2 保留了例子和自测。练习答案、阅读进度和私人草稿只保存在当前浏览器；公开打卡笔记则可以直接分享给别人。</p><div class="page-links"><a href="#task1">开始阅读 Task 1 →</a><a href="#template">查看后续笔记模板</a></div></div></article></section>
 <section class="panel" id="task1" aria-labelledby="task1-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 01 / 学习记录</span><h2 id="task1-title">环境准备与公共基础</h2><p>从“需要哪些 API”到“离线评测在测什么”，把课前准备中的问题逐个讲清楚。</p></div></div><div class="body prose"><div class="chapter-meta">实践日期：2026-09-15 · 公共基础：F0 / F1 / F2</div><div class="callout"><strong>本次任务的主线</strong><p>完成 Shell、Python、模型 API、Git 自检，阅读公共基础。下文按实际提问整理，实践结果来自本机记录，操作由 AI 辅助完成；概念解释不作为个人掌握程度的证明。</p></div>
 <h3>01 · Task 1 要完成什么，需要做实验吗？</h3><p>本次给出的任务要求是“完成 Shell、Python、模型 API、Git 自检与课前导读”。因此，重点是准备好可运行的环境，并建立公共基础概念之间的联系。</p><p>环境自检本身就有动手操作：运行命令、安装依赖、尝试最小 API 请求、检查错误。本次还提前体验了 D3/P5 离线评测，但它们属于补充探索，不据此把它们列为 Task 1 的必交实验。</p><div class="table-wrap"><table><thead><tr><th>任务部分</th><th>这次留下的证据</th></tr></thead><tbody><tr><td>环境准备</td><td>版本检查、依赖检查和测试运行结果</td></tr><tr><td>模型接口</td><td>Qwen、DeepSeek 各一次真实请求的结果</td></tr><tr><td>公共基础</td><td>F0/F1/F2 知识整理、案例和待解问题</td></tr><tr><td>补充探索</td><td>D3/P5 离线报告及 seekdb 排错记录</td></tr></tbody></table></div>
 <h3>02 · 已有 Qwen 和 DeepSeek，API 怎么用？</h3><p>本次使用的是阿里云百炼的 Qwen API，以及 DeepSeek 官网 API。调用时不只有 Key：还要匹配对应服务商的接口地址和模型名。密钥保存在本机 <code>code/.env</code>，不写入公开笔记。</p><p>操作分为三步：先准备配置位置，再填入两家的 Key，最后运行独立的在线检查脚本。课程原版配置没有直接接入本次 DeepSeek 变量，因此由单独的检查脚本完成适配。</p><pre><code># 在课程仓库根目录运行；这条命令会发起真实模型请求
@@ -2044,7 +2044,241 @@ def _parse_args():
 
 
 if __name__ == &quot;__main__&quot;:
-    raise SystemExit(main(db_path=_parse_args().db_path))</code></pre></details><div class="page-links"><a href="#task3">← Task 3总览</a><a href="#rag">继续阅读D3拓展 →</a></div></div></article></section><section id="f0" class="panel" aria-labelledby="f0-title"><article class="chapter"><header class="chapter-head"><div><span class="eyebrow">F0 · 课前闲聊</span><h2 id="f0-title">Agent 的经验，从哪里来？</h2><p>先弄清经验怎样留下来，再追踪它怎样影响下一次任务。</p></div><span class="chapter-no" aria-hidden="true">01</span></header><div class="body">
+    raise SystemExit(main(db_path=_parse_args().db_path))</code></pre></details><div class="page-links"><a href="#task3">← Task 3总览</a><a href="#rag">继续阅读D3拓展 →</a></div></div></article></section>
+<section class="panel" id="task4" aria-labelledby="task4-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 04 / 分块与 AI FUNCTIONS</span><h2 id="task4-title">分块策略与数据库 AI Functions</h2><p>2026-09-23 实验记录 · 2026-09-24 整理更新</p></div></div><div class="body prose"><h3>01 · 已完成的范围</h3><p>本地记录显示已运行 D2-1 至 D2-5，并通过 pyseekdb 注册模型和端点、执行四种 AI Functions、记录负向对照与清理结果。D2-1/4 的基本流程延续 Task 3，本次新增重点是长文档分块对比与数据库内调用 AI。</p><p>本次网页更新只核对已有源码和保存报告，没有重新调用模型、重建数据库或触碰端点凭据。AI Functions 中的预期失败不算成成功调用；报告产生后原生库曾异常退出，记录说明第二次执行正常，故不能宣称两次都成功。</p><figure class="code-diagram"><svg viewBox="0 0 760 130" role="img" aria-labelledby="t4-over-diagram"><title id="t4-over-diagram">执行过程</title><rect x="15" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="92" y="51" text-anchor="middle" font-size="15" fill="#263951">D2-1～4</text><text x="92" y="73" text-anchor="middle" font-size="15" fill="#263951">数据与检索</text><path d="M174 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="205" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="282" y="51" text-anchor="middle" font-size="15" fill="#263951">D2-5</text><text x="282" y="73" text-anchor="middle" font-size="15" fill="#263951">四种分块</text><path d="M364 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="395" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="472" y="51" text-anchor="middle" font-size="15" fill="#263951">AI Functions</text><text x="472" y="73" text-anchor="middle" font-size="15" fill="#263951">库内调用模型</text><path d="M554 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="585" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="662" y="51" text-anchor="middle" font-size="15" fill="#263951">记录边界</text><text x="662" y="73" text-anchor="middle" font-size="15" fill="#263951">结果与异常</text></svg><figcaption>从左到右追踪数据与调用</figcaption></figure><h3>02 · 分块结果</h3><div class="table-wrap"><table><thead><tr><th>策略</th><th>片段数</th><th>平均字符数</th><th>脚本 Recall@3</th></tr></thead><tbody><tr><td>fixed</td><td>5</td><td>186.0</td><td>0.6</td></tr><tr><td>dynamic</td><td>6</td><td>185.0</td><td>1.0</td></tr><tr><td>parent_child</td><td>9</td><td>104.4</td><td>0.6</td></tr><tr><td>semantic</td><td>2</td><td>396.5</td><td>0.8</td></tr></tbody></table></div><p>dynamic 在5个查询上得分最高，只是这篇样文与本次判分的结果，不是通用策略排名。父子策略的片段长度统计子块，评测返回父块，比较粒度并不完全一致。</p><h3>03 · AI Functions 实测摘要</h3><ul><li>AI_EMBED：默认输出1024维，指定512时返回512维。</li><li>AI_PROMPT：单独求值返回模板与参数组成的JSON结构。</li><li>AI_COMPLETE：基础生成成功；结构化示例返回 name/kind JSON。</li><li>AI_RERANK：OPENAI provider 路径报不支持；改用 aliyun-dashscope 原生路径后成功。</li></ul><p>这些是本次 pyseekdb 1.3.0 / pylibseekdb 1.3.0.post5 embedded 环境的记录，不代表所有版本的支持矩阵。实际金额和Token未记录。</p><h3>04 · 阅读顺序</h3><p>先读<a href="#t4-chunk">四种分块代码与批量适配</a>，再读<a href="#t4-sql">SQL 注册、执行和清理</a>。D2-1 至 D2-4 的详细代码沿用 <a href="#task3">Task 3</a>，不重复堆放。</p><div class="page-links"><a href="#task4">Task 4 总览</a><a href="#t4-chunk">分块代码</a><a href="#t4-sql">AI Functions 代码</a></div></div></article></section>
+<section class="panel" id="t4-chunk" aria-labelledby="t4-chunk-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 04 / 分块与 AI FUNCTIONS</span><h2 id="t4-chunk-title">D2-5：四种分块策略逐段读</h2><p>2026-09-23 实验记录 · 2026-09-24 整理更新</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 130" role="img" aria-labelledby="t4-chunks-diagram"><title id="t4-chunks-diagram">执行过程</title><rect x="15" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="92" y="51" text-anchor="middle" font-size="15" fill="#263951">长文档</text><text x="92" y="73" text-anchor="middle" font-size="15" fill="#263951">分句/结构边界</text><path d="M174 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="205" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="282" y="51" text-anchor="middle" font-size="15" fill="#263951">切分策略</text><text x="282" y="73" text-anchor="middle" font-size="15" fill="#263951">片段与元数据</text><path d="M364 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="395" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="472" y="51" text-anchor="middle" font-size="15" fill="#263951">建库并检索</text><text x="472" y="73" text-anchor="middle" font-size="15" fill="#263951">候选Top-3</text><path d="M554 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="585" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="662" y="51" text-anchor="middle" font-size="15" fill="#263951">关键词检查</text><text x="662" y="73" text-anchor="middle" font-size="15" fill="#263951">5条查询</text></svg><figcaption>从左到右追踪数据与调用</figcaption></figure><h3>01 · 四种策略改变的是哪一步？</h3><p>固定重叠按字符窗口推进；动态重叠仍用字符窗口，但在结构边界附近缩小步长；父子分块用小块做索引、回取大块作为上下文；语义分块先比较相邻句向量，再决定在哪里切。</p><p>重要区别：语义边界使用的百炼向量，与入库检索使用的向量不是同一环节。当前 runner 只替换 build_embed_fn，create_seekdb_retriever 创建集合时没有注入该函数，检索仍走默认集合向量函数。不能把这一页写成“全部检索都换成百炼”。</p><h3>02 · 固定重叠：保证步长为正</h3><pre class="lesson-code"><code>def fixed_overlap_chunk(
+    text: str,
+    chunk_size: int = 200,
+    overlap: int = 30,
+) -&gt; list[str]:
+    &quot;&quot;&quot;固定大小 + 固定 overlap 的基线分块策略。&quot;&quot;&quot;
+    _validate_fixed_chunk_parameters(chunk_size, overlap)
+    chunks: list[str] = []
+    start = 0
+    while start &lt; len(text):
+        end = start + chunk_size
+        piece = text[start:end].strip()
+        if piece:
+            chunks.append(piece)
+        start += chunk_size - overlap
+    return chunks</code></pre><p>start 每次增加 chunk_size-overlap。默认200/30时步长170，重叠保留30字符；函数验证 overlap 小于 chunk_size，避免死循环。它按Python字符串字符切分，不按Token。</p><h3>03 · 动态重叠：边界改变的是步长</h3><pre class="lesson-code"><code>def dynamic_overlap_chunk(
+    text: str,
+    chunk_size: int = 200,
+    base_overlap: int = 20,
+    max_overlap: int = 60,
+) -&gt; list[str]:
+    &quot;&quot;&quot;
+    动态 overlap：在段落、标题、表格和代码块边界处加大重叠，
+    同质段落内减小重叠。
+
+    思路参考 Weaviate《Chunking Strategies for RAG》中的 Adaptive Chunking：
+    根据内容结构动态调整参数，而非全文统一 overlap。
+    &quot;&quot;&quot;
+    if chunk_size &lt;= 0:
+        raise ValueError(&quot;chunk_size 必须大于 0&quot;)
+    if base_overlap &lt; 0 or max_overlap &lt; 0:
+        raise ValueError(&quot;overlap 必须大于等于 0&quot;)
+    if base_overlap &gt; max_overlap:
+        raise ValueError(&quot;base_overlap 不能大于 max_overlap&quot;)
+    if max_overlap &gt;= chunk_size:
+        raise ValueError(&quot;max_overlap 必须小于 chunk_size&quot;)
+
+    if not text.strip():
+        return []
+
+    boundaries = _detect_boundary_positions(text)
+    chunks: list[str] = []
+    start = 0
+    text_len = len(text)
+
+    while start &lt; text_len:
+        end = min(start + chunk_size, text_len)
+        piece = text[start:end].strip()
+        if piece:
+            chunks.append(piece)
+        overlap = _overlap_near_boundary(end, boundaries, base_overlap, max_overlap)
+        stride = max(chunk_size - overlap, 1)
+        start += stride
+
+    return chunks</code></pre><p>先识别空行、Markdown标题、表格行和代码围栏，再检查块末尾是否靠近这些位置。附近用max_overlap，否则用base_overlap。它没有把切点精确移动到句号处，也不是自动理解所有句子语义。</p><h3>04 · 父子分块：索引粒度与返回粒度分离</h3><pre class="lesson-code"><code>def parent_child_chunk(
+    text: str,
+    parent_size: int = 500,
+    child_size: int = 120,
+    child_overlap: int = 20,
+) -&gt; list[ParentChunk]:
+    &quot;&quot;&quot;
+    父子分块：父块保留完整上下文，子块用于精准检索。
+
+    检索时只索引子块；命中后通过 parent_id 取回父块文本给 LLM。
+    又称 small-to-big / parent-document retrieval。
+    &quot;&quot;&quot;
+    _validate_fixed_chunk_parameters(parent_size, 0)
+    _validate_fixed_chunk_parameters(child_size, child_overlap)
+
+    parent_texts = fixed_overlap_chunk(text, parent_size, overlap=0)
+    parents: list[ParentChunk] = []
+
+    for parent_idx, parent_text in enumerate(parent_texts):
+        parent_id = f&quot;parent_{parent_idx}&quot;
+        child_texts = fixed_overlap_chunk(parent_text, child_size, child_overlap)
+        children = [
+            ChildChunk(
+                text=child_text,
+                parent_id=parent_id,
+                child_index=child_idx,
+            )
+            for child_idx, child_text in enumerate(child_texts)
+        ]
+        parents.append(
+            ParentChunk(
+                parent_id=parent_id,
+                text=parent_text,
+                children=children,
+            )
+        )
+    return parents</code></pre><p>父块默认500字符且无重叠；每个父块再切120字符、20重叠的子块。ChildChunk 保存 parent_id 和 child_index。flatten_parent_child 把父文本复制进子块元数据；命中子块后回取parent_text，所以存储有重复。</p><h3>05 · 语义分块：先计算相邻句差异</h3><pre class="lesson-code"><code>def semantic_chunk(
+    text: str,
+    embed_fn,
+    percentile: float = 95.0,
+    min_chunk_chars: int = 80,
+    max_chunk_chars: int = 600,
+) -&gt; list[str]:
+    &quot;&quot;&quot;
+    语义分块：逐句 Embedding，在主题跳变处插入断点。
+
+    embed_fn: 接收字符串列表，返回等长向量列表的函数。
+    参考 NAACL 2025 Findings《Is Semantic Chunking Worth the Computational Cost?》
+    与 LangChain SemanticChunker 的 percentile 阈值实现。
+    &quot;&quot;&quot;
+    if (
+        isinstance(percentile, bool)
+        or not isinstance(percentile, Real)
+        or not math.isfinite(percentile)
+        or not 0 &lt;= percentile &lt;= 100
+    ):
+        raise ValueError(&quot;percentile 必须是 0 到 100 之间的有限数值&quot;)
+    if min_chunk_chars &lt;= 0:
+        raise ValueError(&quot;min_chunk_chars 必须大于 0&quot;)
+    if max_chunk_chars &lt;= 0:
+        raise ValueError(&quot;max_chunk_chars 必须大于 0&quot;)
+    if min_chunk_chars &gt; max_chunk_chars:
+        raise ValueError(&quot;min_chunk_chars 不能大于 max_chunk_chars&quot;)
+
+    sentences = split_sentences(text)
+    if not sentences:
+        return []
+
+    if len(sentences) == 1:
+        raw_chunks = sentences
+    else:
+        embeddings = list(embed_fn(sentences))
+        _validate_embeddings(embeddings, len(sentences))
+        similarities = [
+            _cosine_similarity(embeddings[i], embeddings[i + 1])
+            for i in range(len(embeddings) - 1)
+        ]
+        breakpoints = _find_semantic_breakpoints(similarities, percentile)
+
+        raw_chunks = []
+        start = 0
+        for idx in range(1, len(sentences) + 1):
+            if idx in breakpoints or idx == len(sentences):
+                raw_chunks.append(&quot;&quot;.join(sentences[start:idx]))
+                start = idx
+
+    return _merge_small_chunks(raw_chunks, min_chunk_chars, max_chunk_chars)</code></pre><p>split_sentences 用标点正则分句。28句编码成28个向量，相邻句计算27个余弦相似度。断点函数使用1-similarity的分位阈值；它比较相邻句的距离，不是计算“相似度曲线的二阶跌幅”。随后合并短块、切开过长块。</p><h3>06 · 阈值、边界与返回值</h3><pre class="lesson-code"><code>def _find_semantic_breakpoints(
+    similarities: list[float],
+    percentile: float = 95.0,
+) -&gt; set[int]:
+    &quot;&quot;&quot;
+    在相邻句相似度序列中，找出「语义跳变」断点。
+    采用 LangChain SemanticChunker 的 percentile 思路：
+    当相似度跌幅超过第 percentile 分位时切分。
+    &quot;&quot;&quot;
+    if len(similarities) &lt; 2:
+        return set()
+
+    drops = [1.0 - sim for sim in similarities]
+    if max(drops) == min(drops):
+        return set()
+
+    threshold = _percentile(drops, percentile)
+
+    breakpoints: set[int] = set()
+    for idx, drop in enumerate(drops):
+        if drop &gt;= threshold:
+            breakpoints.add(idx + 1)
+    return breakpoints</code></pre><p>idx+1 表示切在相邻两句之间。默认95分位选取较大的距离作为候选断点；相似度全相同则不设断点。_merge_small_chunks 再按80/600字符限制整理，因此最终块边界不只由向量决定。</p><p>_validate_embeddings 检查向量数量、非空、同维以及数值有限；它不验证语义质量。零向量的余弦实现返回0，也应留意异常输入如何影响边界。</p><h3>07 · 百炼适配：28条变成10+10+8</h3><pre class="lesson-code"><code>def build_embed_fn(model: str = MODEL, batch_size: int = MAX_BATCH_SIZE):
+    &quot;&quot;&quot;返回百炼 embedding 可调用对象，契约与上游 build_embed_fn 一致。
+
+    内部按 `batch_size` 分批，使「一次逻辑调用」可能对应多次 HTTP 请求；
+    实际请求次数记录在返回对象的 `request_count` 上。
+    &quot;&quot;&quot;
+    from config import Config  # 导入即触发 code/.env 加载
+
+    if not Config._is_configured_value(Config.DASHSCOPE_API_KEY):
+        raise RuntimeError(&quot;语义分块需要 DASHSCOPE_API_KEY，请在 code/.env 中配置&quot;)
+
+    client = OpenAI(
+        api_key=Config.DASHSCOPE_API_KEY,
+        base_url=Config.get_dashscope_config()[&quot;base_url&quot;],
+    )
+
+    def embed_batch(texts: list[str]) -&gt; list[list[float]]:
+        vectors: list[list[float]] = []
+        for start in range(0, len(texts), batch_size):
+            window = texts[start : start + batch_size]
+            response = client.embeddings.create(model=model, input=window)
+            embed_batch.request_count += 1
+            vectors.extend(item.embedding for item in response.data)
+        return vectors
+
+    embed_batch.request_count = 0
+    embed_batch.close = client.close
+    embed_batch.model_name = model
+    embed_batch.batch_size = batch_size
+    return embed_batch</code></pre><ol><li>build_embed_fn 创建客户端，返回内部可调用对象embed_batch。</li><li>range(0,len(texts),batch_size) 依次取窗口，本次上限10条，28条分三批。</li><li>每个响应的向量追加到 vectors，返回给原语义分块函数。</li><li>给函数挂 close 属性，满足原版 finally 中 embed_fn.close() 的接口契约。</li></ol><p>首次超出该端点批量上限返回400；分批后报告记录1次逻辑调用、28条输入、3次计数。该计数在成功响应后递增，且适配器未显式关闭SDK默认重试，所以严谨地说它不是抓包层面的所有HTTP尝试数，也不包括后续建库/查询编码。此次不据此推算完整账单。</p><p>源码按response.data迭代次序追加向量；通用适配器还应校验响应数量与index对应关系，避免输入与输出错位。这里记录既有实验，不暗称已完成这些额外加固。</p><h3>08 · Recall@3 实际怎样计算？</h3><pre class="lesson-code"><code>def recall_at_k(retriever, query: str, keyword: str, use_parent_context: bool, k: int = 3) -&gt; bool:
+    if use_parent_context:
+        docs = retriever.search_with_context(query, k=k)
+    else:
+        docs = retriever.search(query, k=k)
+    return keyword in &quot; &quot;.join(docs)</code></pre><div class="table-wrap"><table><thead><tr><th>策略</th><th>片段数</th><th>平均字符数</th><th>脚本 Recall@3</th></tr></thead><tbody><tr><td>fixed</td><td>5</td><td>186.0</td><td>0.6</td></tr><tr><td>dynamic</td><td>6</td><td>185.0</td><td>1.0</td></tr><tr><td>parent_child</td><td>9</td><td>104.4</td><td>0.6</td></tr><tr><td>semantic</td><td>2</td><td>396.5</td><td>0.8</td></tr></tbody></table></div><p>每个查询只判断预设关键词是否出现在返回文本拼接中，最后5题命中数除以5。它更接近样例命中比例，并非按所有相关文档数量定义的严格召回率。parent_child 会使用父上下文，其他策略直接用片段。</p><p>报告中的“没有硅基Key，稍后跳过语义分块”是旧入口提示；实际表包含semantic行并记录百炼计数，说明适配后已经执行。判断状态应综合结构化结果，不能只看这一行提示。</p><div class="page-links"><a href="#task4">Task 4 总览</a><a href="#t4-chunk">分块代码</a><a href="#t4-sql">AI Functions 代码</a></div></div></article></section>
+<section class="panel" id="t4-sql" aria-labelledby="t4-sql-title" hidden><article class="chapter"><div class="chapter-head"><div><span class="eyebrow">TASK 04 / 分块与 AI FUNCTIONS</span><h2 id="t4-sql-title">AI Functions：从Python到SQL再到模型</h2><p>2026-09-23 实验记录 · 2026-09-24 整理更新</p></div></div><div class="body prose"><figure class="code-diagram"><svg viewBox="0 0 760 130" role="img" aria-labelledby="t4-functions-diagram"><title id="t4-functions-diagram">执行过程</title><rect x="15" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="92" y="51" text-anchor="middle" font-size="15" fill="#263951">Python游标</text><text x="92" y="73" text-anchor="middle" font-size="15" fill="#263951">execute(SQL)</text><path d="M174 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="205" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="282" y="51" text-anchor="middle" font-size="15" fill="#263951">逻辑模型</text><text x="282" y="73" text-anchor="middle" font-size="15" fill="#263951">解析端点/provider</text><path d="M364 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="395" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="472" y="51" text-anchor="middle" font-size="15" fill="#263951">外部模型</text><text x="472" y="73" text-anchor="middle" font-size="15" fill="#263951">向量/生成/重排</text><path d="M554 57 h25 m-7 -5 l7 5 -7 5" stroke="#687bc2" fill="none" stroke-width="2"/><rect x="585" y="25" width="155" height="65" rx="7" fill="#f1f4fd" stroke="#a9b9df"/><text x="662" y="51" text-anchor="middle" font-size="15" fill="#263951">SQL结果</text><text x="662" y="73" text-anchor="middle" font-size="15" fill="#263951">fetchall与解析</text></svg><figcaption>从左到右追踪数据与调用</figcaption></figure><h3>01 · Python调用与库内调用的差别</h3><p>D1由应用客户端直接请求模型；本次由pyseekdb执行SQL，数据库根据逻辑模型配置选择端点和协议，再调用外部服务。AI_PROMPT负责本地构造提示结构，不是生成模型。</p><p>模型服务失败、延迟和费用仍然存在。把调用写成SQL并没有将推理变成本地纯计算；本次也没有实测事务回滚、并发限流或多行放大。</p><h3>02 · 从cursor到结果行</h3><pre class="lesson-code"><code>class Sql:
+    &quot;&quot;&quot;极薄的 SQL 执行封装；游标不支持参数绑定，值由调用方内联。&quot;&quot;&quot;
+
+    def __init__(self, db):
+        self._conn = db._server.get_raw_connection()
+        self._cur = self._conn.cursor()
+        self.statements = 0
+
+    def run(self, sql: str):
+        self.statements += 1
+        self._cur.execute(sql)
+        try:
+            return self._cur.fetchall()
+        except Exception:
+            return []
+
+    def try_run(self, sql: str) -&gt; tuple[bool, str]:
+        try:
+            self.run(sql)
+            return True, &quot;&quot;
+        except Exception as exc:  # noqa: BLE001 - 失败原因要原样记录
+            return False, redact(str(exc))[:400]</code></pre><p>_server.get_raw_connection() 使用客户端内部路径，具有版本依赖。execute运行SQL；fetchall取回行列表。run捕获所有fetchall异常并返回空列表，这适合演示兼容，却可能掩盖真实取数问题；空列表不应一概当作成功且无数据。</p><p>try_run 返回 (是否成功, 脱敏错误)，因此负向测试可以记录错误后继续。statements 只统计执行的SQL数量，不是网络请求数量。</p><h3>03 · 逻辑模型与端点分开配置</h3><pre class="lesson-code"><code>CALL DBMS_AI_SERVICE.CREATE_AI_MODEL(
+  &#x27;t4_embedding&#x27;,
+  &#x27;{&quot;type&quot;:&quot;dense_embedding&quot;,&quot;model_name&quot;:&quot;text-embedding-v4&quot;}&#x27;
+);
+-- 端点另行绑定逻辑模型、URL、provider 和访问凭据。
+-- 此处省略含凭据的注册SQL，不在网页中展示真实配置。</code></pre><p>逻辑名是SQL引用的别名；物理模型名表示实际服务模型；provider决定数据库如何构造请求、解析响应。OPENAI在本次表示兼容协议，不表示服务商一定是OpenAI。</p><p>端点注册在临时库中使用密钥，公开网页不附含凭据语句或数据库。DROP配置也不等于证明底层磁盘痕迹已被安全擦除；本次仅记录配置对象清理动作。</p><h3>04 · AI_EMBED：返回的是向量，不是答案</h3><pre class="lesson-code"><code>SELECT AI_EMBED(&#x27;t4_embedding&#x27;, &#x27;seekdb 是一款 AI 原生数据库&#x27;);
+SELECT AI_EMBED(&#x27;t4_embedding&#x27;, &#x27;seekdb 是一款 AI 原生数据库&#x27;, 512);</code></pre><p>已有报告分别返回1024、512维。脚本从 rows[0][0] 取第一行第一列并解析向量，记录维度而非打印整串数字。指定维度必须得到模型支持；查询与文档向量需匹配，不能将512维查询直接比较1024维文档。本次没有继续做向量列入库和距离查询闭环。</p><h3>05 · AI_PROMPT与AI_COMPLETE不是同一个动作</h3><pre class="lesson-code"><code>SELECT AI_PROMPT(&#x27;问题：{0}&#x27;, &#x27;seekdb 如何调用外部模型？&#x27;);
+SELECT AI_COMPLETE(&#x27;t4_completion&#x27;, &#x27;用一句话解释 AI Functions 的价值&#x27;);
+SELECT AI_COMPLETE(&#x27;t4_not_exist_model&#x27;, AI_PROMPT(&#x27;问题：{0}&#x27;, &#x27;你好&#x27;));</code></pre><p>第一条得到包含template和args的JSON结构；第二条调用生成模型；第三条故意使用不存在的模型名，得到code=1210。报告还有带config_json的结构化生成，返回 {"name":"seekdb","kind":"db"}。</p><p>课程说明AI_PROMPT是本地组装；本次返回形态与该说明一致。但0.002秒的耗时和不存在模型报错，本身不能严格证明零网络访问——实验没有网络抓包。网页不把间接观察写成网络层证明。</p><h3>06 · AI_RERANK：为何同一服务商还要换provider？</h3><pre class="lesson-code"><code>SELECT AI_RERANK(
+  &#x27;t4_rerank&#x27;, &#x27;AI 函数有哪些？&#x27;,
+  JSON_ARRAY(&#x27;AI_EMBED 将文本转换为向量&#x27;,
+             &#x27;AI_RERANK 对候选文档重排&#x27;,
+             &#x27;AI_COMPLETE 调用生成模型&#x27;)
+);</code></pre><p>重排对给定候选集打分，并不会替你检索整个知识库。成功结果包含index与relevance_score；index对应原候选位置，不应把返回顺序当成原始数组顺序。</p><p>本次OPENAI provider报code=1235“不支持”；使用aliyun-dashscope及百炼原生text-rerank端点后成功。这是当前库版本下的实测，不推广为所有版本或所有OpenAI兼容服务都不支持重排。</p><h3>07 · 清理顺序与异常观察</h3><p>常规顺序是先删端点，再删逻辑模型，最后关闭数据库。实验特意反过来先删仍被端点引用的embedding模型，实际成功；随后重复删除得到not found。这个结果记录了本机行为与课程描述的差异，不证明所有环境允许悬空引用。</p><p>首次运行在写出报告后出现原生库退出异常，记录称第二次退出码0。错误文字与Task 1相似，但没有根因诊断，不能断言两次崩溃同源。网页保留这项限制。</p><h3>08 · 如何复现与继续验证</h3><pre class="lesson-code"><code>.venv/bin/python learning/task4/run_d2_all.py
+.venv/bin/python learning/task4/run_ai_functions.py</code></pre><p>以上命令会重建演示资源并产生真实请求，不是只读查看。此次更新没有执行。后续可做429/非法响应注入、多行调用计数和向量列检索闭环；这些尚未完成，不列为通过项目。</p><div class="page-links"><a href="#task4">Task 4 总览</a><a href="#t4-chunk">分块代码</a><a href="#t4-sql">AI Functions 代码</a></div></div></article></section><section id="f0" class="panel" aria-labelledby="f0-title"><article class="chapter"><header class="chapter-head"><div><span class="eyebrow">F0 · 课前闲聊</span><h2 id="f0-title">Agent 的经验，从哪里来？</h2><p>先弄清经验怎样留下来，再追踪它怎样影响下一次任务。</p></div><span class="chapter-no" aria-hidden="true">01</span></header><div class="body">
 <div class="callout"><strong>这一章的核心</strong><p>课程以 OpenClaw 为例：把偏好、规则和经验保存下来，在下一次任务中重新读取，Agent 才有机会持续利用过去的经验。</p></div>
 <h3>先分清两件事</h3><div class="comparison"><div><span>模型本身的学习</span>训练过程改变模型参数</div><div><span>本章讨论的经验积累</span>保存外部数据，再放入上下文</div></div><p class="note">把笔记写进文件，不意味着模型权重发生变化。文件里的信息需要被正确读取和使用，才会影响后续回答。</p>
 <div class="section"><h3>追踪一条周报规则的完整旅程</h3><p>假设用户提出：“周报先写结论，再列风险，不要超过三段。”下面是一个经验复用的教学示例，不表示所有助手都会自动执行这些步骤。</p><ol><li><strong>确认与保存：</strong>把明确的偏好写入可持久保存的记录，并标明只适用于周报，避免误用到所有文章。</li><li><strong>按任务召回：</strong>下次收到“写周报”的请求时，找到这条规则，而不是加载全部历史。</li><li><strong>放入当前上下文：</strong>将规则与本周工作事实一起交给模型。存储中的信息只有被提供给这次调用，才有机会发挥作用。</li><li><strong>执行并核对：</strong>检查输出是否先给结论、是否列出风险、是否满足篇幅要求。读到规则也不保证一定遵守。</li><li><strong>纠错与更新：</strong>如果用户改为“先列风险”，更新适用规则，处理旧版本；不要让两条冲突要求长期并存。</li></ol><div class="example"><span class="label">失败时，沿链路找原因</span><p>没有保存 → 下次没有来源；保存但没召回 → 来源存在但这次看不到；召回了旧规则 → 数据过期；提供了正确规则仍没执行 → 继续检查理解和执行。</p></div><p>因此，“越用越好用”依赖整条链路。它不意味着每次对话都在训练模型，也不意味着记录越多越好。</p></div>
@@ -2098,8 +2332,8 @@ function counts(){let answered=0,right=0;for(const [id,items] of Object.entries(
 function updateProgress(){const c=counts();document.querySelector('#progress-text').textContent=`${c.read} / 3 章`;document.querySelector('#progress-bar').style.width=`${c.read/3*100}%`;document.querySelector('#quiz-progress').textContent=`自测 ${c.answered} / 9 · 当前正确 ${c.right} 题`;document.querySelector('#journal-progress').textContent=`阅读进度：${c.read} / 3`;document.querySelector('#journal-score').textContent=`自测已回答 ${c.answered} / 9 题，当前答案正确 ${c.right} 题。可以修改答案、反复练习。`;renderDraft();}
 function draftText(){const c=counts();const lines=['# Task 1：环境准备与公共基础导读','','## 环境准备','- 已完成 Shell、Python、Git 环境自检。','- 已完成百炼 Qwen 与 DeepSeek 官网 API 最小联通验证。','','## 公共基础学习'];for(const [id,chapter] of Object.entries(chapters)){const entry=state.notes[id]||{};lines.push(`\n### ${chapter.title}`,`阅读状态：${state.read[id]===true?'已自行确认阅读导读':'尚未确认完成'}`,`我的理解与例子：\n${entry.note?.trim()||'（待自己填写）'}`,`我的疑问：\n${entry.question?.trim()||'（待自己填写）'}`);}lines.push('\n## 自测',`已回答 ${c.answered}/9 题，当前答案正确 ${c.right} 题。此为本地练习，可修改答案，不是官方考试成绩。`,'\n## 下一步',state.next.trim()||'（待自己填写）','\n---','依据：Easy Data x AI 仓库公共基础 F0/F1/F2。个人心得由本人填写，提交前核对活动格式与实际学习进度。');return lines.join('\n');}
 function renderDraft(){document.querySelector('#draft').value=draftText();}
-function route(){const [requested,anchor]=location.hash.slice(1).split('/');const id=['home','task1','task2','task3','d2-1','d2-2','d2-3','d2-4','rag','d1-1','d1-2','d1-3','d1-4','d1-5','d1-6','template','f0','f1','f2','journal'].includes(requested)?requested:'home';document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('[data-page]').forEach(a=>{a.classList.toggle('active',a.dataset.page===id);if(a.dataset.page===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(id==='journal')renderDraft();
-const labels={task3:'Task 3 · D2 数据层','d2-1':'Task 3 / D2-1','d2-2':'Task 3 / D2-2','d2-3':'Task 3 / D2-3','d2-4':'Task 3 / D2-4',task2:'Task 2 · D1 代码实战',rag:'拓展 · D3 RAG 实验','d1-1':'Task 2 / D1-1','d1-2':'Task 2 / D1-2','d1-3':'Task 2 / D1-3','d1-4':'Task 2 / D1-4','d1-5':'Task 2 / D1-5','d1-6':'Task 2 / D1-6',home:'总览',task1:'Task 1 · 打卡笔记',template:'Task 笔记模板',f0:'Task 1 / F0',f1:'Task 1 / F1',f2:'Task 1 / F2',journal:'Task 1 / 私人草稿'};
+function route(){const [requested,anchor]=location.hash.slice(1).split('/');const id=['task4','t4-chunk','t4-sql','home','task1','task2','task3','d2-1','d2-2','d2-3','d2-4','rag','d1-1','d1-2','d1-3','d1-4','d1-5','d1-6','template','f0','f1','f2','journal'].includes(requested)?requested:'home';document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('[data-page]').forEach(a=>{a.classList.toggle('active',a.dataset.page===id);if(a.dataset.page===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});if(id==='journal')renderDraft();
+const labels={task4:'Task 4 · 分块与AI Functions','t4-chunk':'Task 4 / D2-5','t4-sql':'Task 4 / AI Functions',task3:'Task 3 · D2 数据层','d2-1':'Task 3 / D2-1','d2-2':'Task 3 / D2-2','d2-3':'Task 3 / D2-3','d2-4':'Task 3 / D2-4',task2:'Task 2 · D1 代码实战',rag:'拓展 · D3 RAG 实验','d1-1':'Task 2 / D1-1','d1-2':'Task 2 / D1-2','d1-3':'Task 2 / D1-3','d1-4':'Task 2 / D1-4','d1-5':'Task 2 / D1-5','d1-6':'Task 2 / D1-6',home:'总览',task1:'Task 1 · 打卡笔记',template:'Task 笔记模板',f0:'Task 1 / F0',f1:'Task 1 / F1',f2:'Task 1 / F2',journal:'Task 1 / 私人草稿'};
 document.querySelector('#breadcrumb').textContent=labels[id];document.title=labels[id]+' · Easy Data × AI 学习笔记';
 const toc=document.querySelector('#page-toc');toc.replaceChildren();document.querySelectorAll('#'+id+' h3').forEach((h,n)=>{if(!h.id)h.id=id+'-section-'+n;const a=document.createElement('a');a.textContent=h.textContent;a.href='#'+id+'/'+h.id;toc.append(a);});
 document.querySelector('.rail').classList.remove('open');syncSidebar();const selected=document.querySelector('.nav [aria-current="page"]');const group=selected?.closest('.task-group');if(group)group.open=true;
